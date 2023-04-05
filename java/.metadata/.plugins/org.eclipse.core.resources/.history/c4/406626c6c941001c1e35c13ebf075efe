@@ -1,0 +1,104 @@
+package Velha;
+
+public class Velha {
+	private int[] campos;
+	private int campoVazio;
+	
+	Velha()
+	{
+		campos = new int[9];
+		limparCampo();
+	}
+	
+	public void limparCampo()
+	{
+		campoVazio = 9;
+		for(int i = 0; i < campos.length; ++i)
+		{
+			campos[i] = 0;
+		}
+	}
+	
+	public void fazerJogada(int index, int jogador)
+	{
+		if(campos[index] == 0 || jogador == 0)
+		{
+			campos[index] = jogador;
+			--campoVazio;
+		}
+		else
+			throw new CampoPreenchido("campo já ocupado");
+	}
+	
+	private int procLinhas(int inicial, int max)
+	{
+		int resultado = ~0;
+		for(int i = 0; i < max; ++i)
+		{
+			resultado &= campos[i];
+		}
+		return resultado;
+	}
+	
+	private int procColunas(int inicial, int tamanhoLinha, int max)
+	{
+		int resultado = ~0;
+		for(int i = 0; i < max; ++i)
+		{
+			resultado &= campos[i*tamanhoLinha];
+		}
+		return resultado;
+	}
+	
+	private int procDiagPos(int inicial, int tamanhoLinha, int max)
+	{
+		int resultado = ~0;
+		for(int i = 0; i < max; ++i)
+		{
+			resultado &= campos[i*(tamanhoLinha+1)];
+		}
+		return resultado;
+	}
+	
+	private int procDiagNeg(int inicial, int tamanhoLinha, int max)
+	{
+		int resultado = ~0;
+		for(int i = 0; i < max; ++i)
+		{
+			resultado &= campos[i*(tamanhoLinha+1)];
+		}
+		return resultado;
+	}
+	
+	public int testarEstado()
+	{
+		int test = 0;
+		for(int i = 0; i < campos.length/3; ++i)
+		{
+			test |= procLinhas(i, 3) | procColunas(i, 3, 3);
+		}
+		test |= procDiagPos(0, 3, 3) | procDiagNeg(2, 3, 3);
+		
+		if(campoVazio == 0 && test == 0)
+			return 3;
+		
+		return test;
+	}
+	
+	public int[] RetornarCampo()
+	{
+		return campos;
+	}
+	
+	public String toString()
+	{
+		String campo = new String();
+		for(int i = 0; i < campos.length; ++i)
+		{
+			if(i % 3 == 0)
+				campo += '\n';
+			campo += ((campos[i] == 0) ? "H" : ((campos[i] == 1) ? "X" : ((campos[i] == 2) ? "O" : "!"))) + " ";
+		}
+		return campo;
+	}
+}

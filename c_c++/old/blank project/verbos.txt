@@ -1,0 +1,7 @@
+andar -1r
+correr -2r
+jogar -1r
+ler -2i
+ver -2i
+beber -2r
+comer -2r

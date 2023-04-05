@@ -1,0 +1,51 @@
+package jogadores;
+
+import java.util.Scanner;
+
+import velha.CampoPreenchido;
+import velha.Velha;
+
+public class UsuarioConsole implements Jogador {
+	private Scanner scan;
+	private boolean modoConsole;
+	private int jogador;
+	
+	public UsuarioConsole()
+	{
+		modoConsole = false;
+	}
+	
+	public UsuarioConsole(Scanner scan)
+	{
+		modoConsole = true;
+		this.scan = scan;
+	}
+	
+	public int fazerJogada(Velha velha, int jogador) {
+		this.jogador = jogador;
+		return fazerJogada(velha);
+	}
+
+	@Override
+	public int fazerJogada(Velha velha) {
+		if(modoConsole)
+		{
+			do
+			{
+				System.out.println(velha.toString());
+				System.out.print("index:");
+				try {
+					return velha.fazerJogada(scan.nextInt(), jogador);
+				}catch(CampoPreenchido e)
+				{
+					System.out.println("Jogada Inválida");
+				}
+			}while(true);
+		}
+		else
+		{
+			return 3;
+		}
+	}
+
+}

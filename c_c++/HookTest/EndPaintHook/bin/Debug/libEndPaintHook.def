@@ -1,0 +1,4 @@
+EXPORTS
+    DLLloaded @1
+    DllMain @2
+    EndPaintHook @3

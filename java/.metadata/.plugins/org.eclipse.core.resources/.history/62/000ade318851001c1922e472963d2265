@@ -1,0 +1,12 @@
+package velha;
+
+public class JogadorInvalido extends RuntimeException {
+	/**
+	 * 
+	 */
+
+	public JogadorInvalido(String msg)
+	{
+		super(msg);
+	}
+}

@@ -1,0 +1,119 @@
+package janelas;
+
+import org.eclipse.swt.widgets.Dialog;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Label;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.events.SelectionAdapter;
+import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.widgets.Group;
+import org.eclipse.swt.widgets.Spinner;
+
+public class JanelaNovoJogo extends Dialog {
+
+	protected Object result;
+	protected Shell shell;
+	private Group grpJogoPersonalizado;
+	private Spinner spinner;
+	private Spinner spinner_1;
+	private Spinner spinner_2;
+
+	/**
+	 * Create the dialog.
+	 * @param parent
+	 * @param style
+	 */
+	public JanelaNovoJogo(Shell parent, int style) {
+		super(parent, style);
+		setText("SWT Dialog");
+	}
+
+	/**
+	 * Open the dialog.
+	 * @return the result
+	 */
+	public Object open() {
+		createContents();
+		shell.open();
+		shell.layout();
+		Display display = getParent().getDisplay();
+		while (!shell.isDisposed()) {
+			if (!display.readAndDispatch()) {
+				display.sleep();
+			}
+		}
+		return result;
+	}
+
+	/**
+	 * Create contents of the dialog.
+	 */
+	private void createContents() {
+		shell = new Shell(getParent(), SWT.DIALOG_TRIM | SWT.APPLICATION_MODAL);
+		shell.setSize(450, 200);
+		shell.setText(getText());
+		
+		Label lblModoDeJogo = new Label(shell, SWT.NONE);
+		lblModoDeJogo.setBounds(10, 135, 78, 15);
+		lblModoDeJogo.setText("Modo de jogo:");
+		
+		Button btnNormal = new Button(shell, SWT.RADIO);
+		btnNormal.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				grpJogoPersonalizado.setEnabled(false);
+				/*spinner.setEnabled(false);
+				spinner_1.setEnabled(false);
+				spinner_2.setEnabled(false);*/
+			}
+		});
+		btnNormal.setSelection(true);
+		btnNormal.setBounds(94, 135, 59, 16);
+		btnNormal.setText("normal");
+		
+		Button btnJogar = new Button(shell, SWT.NONE);
+		btnJogar.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+			}
+		});
+		btnJogar.setBounds(349, 125, 75, 25);
+		btnJogar.setText("Jogar");
+		
+		Button btnPersonalizado = new Button(shell, SWT.RADIO);
+		btnPersonalizado.setBounds(159, 135, 94, 16);
+		btnPersonalizado.setText("personalizado");
+		
+		grpJogoPersonalizado = new Group(shell, SWT.NONE);
+		grpJogoPersonalizado.setText("jogo personalizado");
+		grpJogoPersonalizado.setBounds(10, 10, 414, 109);
+		
+		Label lblQuantidadeDeJogadores = new Label(grpJogoPersonalizado, SWT.NONE);
+		lblQuantidadeDeJogadores.setBounds(10, 25, 136, 15);
+		lblQuantidadeDeJogadores.setText("Quantidade de jogadores:");
+		
+		spinner = new Spinner(grpJogoPersonalizado, SWT.BORDER);
+		spinner.setTouchEnabled(true);
+		spinner.setPageIncrement(1);
+		spinner.setMaximum(2);
+		spinner.setSelection(1);
+		spinner.setBounds(152, 22, 47, 22);
+		
+		Label lblDificuldadeCpu = new Label(grpJogoPersonalizado, SWT.NONE);
+		lblDificuldadeCpu.setBounds(20, 53, 98, 15);
+		lblDificuldadeCpu.setText("Dificuldade CPU 1:");
+		
+		spinner_1 = new Spinner(grpJogoPersonalizado, SWT.BORDER);
+		spinner_1.setBounds(124, 50, 47, 22);
+		
+		Label lblDificuldadeCpu_1 = new Label(grpJogoPersonalizado, SWT.NONE);
+		lblDificuldadeCpu_1.setBounds(20, 81, 98, 15);
+		lblDificuldadeCpu_1.setText("Dificuldade CPU 2:");
+		
+		spinner_2 = new Spinner(grpJogoPersonalizado, SWT.BORDER);
+		spinner_2.setBounds(124, 78, 47, 22);
+
+	}
+}

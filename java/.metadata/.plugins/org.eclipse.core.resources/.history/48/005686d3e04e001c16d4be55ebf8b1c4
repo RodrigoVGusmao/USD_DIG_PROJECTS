@@ -1,0 +1,24 @@
+package projetoJava;
+
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Display d = new Display();
+		Shell s = new Shell(d);
+		//s.setVisible(true);
+		//s.open();
+		Login login = new Login(s, 0);
+		login.open();
+		
+		/*while(!login.isDisposed())
+			if(!d.readAndDispatch())
+				d.sleep();*/
+		
+		d.dispose();
+	}
+
+}

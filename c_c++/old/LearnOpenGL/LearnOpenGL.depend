@@ -1,0 +1,4198 @@
+# depslib dependency file v1.0
+1483468488 source:c:\users\digao\onedrive\documentos\c_c++\learnopengl\main.c
+	<gl/gl.h>
+	<SDL.h>
+	<stdio.h>
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<sal.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\begin_code.h
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\close_code.h
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"SDL_endian.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1555732742 source:c:\users\digao\onedrive\documentos\c_c++\learnopengl\main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<string>
+	<SDL.h>
+	<SDL_image.h>
+	<glew.h>
+	<SDL_opengl.h>
+	<glm.hpp>
+	<gtc/matrix_transform.hpp>
+	<gtc/type_ptr.hpp>
+
+1469368778 d:\libs\glew-2.0.0\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_opengl.h
+	"SDL_config.h"
+	"gl_mangle.h"
+	<windows.h>
+	"SDL_opengl_glext.h"
+
+1476935894 d:\libs\sdl2-2.0.5\i686-w64-mingw32\include\sdl2\sdl_opengl_glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1215468808 d:\libs\simple opengl image library\src\soil.h
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_joystick.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_shape.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<wchar.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	<sal.h>
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\begin_code.h
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\close_code.h
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	<process.h>
+	<stdlib.h>
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<arm_neon.h>
+	<mm3dnow.h>
+	<immintrin.h>
+	<mmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<pmmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"SDL_endian.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_sensor.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_shape.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1501505181 d:\libs\glew-2.1.0\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_opengl.h
+	"SDL_config.h"
+	"gl_mangle.h"
+	<windows.h>
+	"SDL_opengl_glext.h"
+
+1541002144 d:\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_opengl_glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1537180351 d:\libs\glm\glm\glm.hpp
+	"detail/_fixes.hpp"
+	"detail/setup.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1535535170 d:\libs\glm\glm\detail\_fixes.hpp
+	<cmath>
+
+1540995841 d:\libs\glm\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	"../simd/platform.h"
+	<cstdint>
+	<type_traits>
+
+1535535170 d:\libs\glm\glm\simd\platform.h
+	<cuda.h>
+	<immintrin.h>
+	<immintrin.h>
+	<popcntintrin.h>
+	<nmmintrin.h>
+	<smmintrin.h>
+	<tmmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1535535170 d:\libs\glm\glm\fwd.hpp
+	"detail/qualifier.hpp"
+
+1537206526 d:\libs\glm\glm\detail\qualifier.hpp
+	"setup.hpp"
+
+1533822423 d:\libs\glm\glm\vec2.hpp
+	"./ext/vector_bool2.hpp"
+	"./ext/vector_bool2_precision.hpp"
+	"./ext/vector_float2.hpp"
+	"./ext/vector_float2_precision.hpp"
+	"./ext/vector_double2.hpp"
+	"./ext/vector_double2_precision.hpp"
+	"./ext/vector_int2.hpp"
+	"./ext/vector_int2_precision.hpp"
+	"./ext/vector_uint2.hpp"
+	"./ext/vector_uint2_precision.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_bool2.hpp
+	"../detail/type_vec2.hpp"
+
+1540995841 d:\libs\glm\glm\detail\type_vec2.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1535535170 d:\libs\glm\glm\detail\_swizzle.hpp
+
+1535535170 d:\libs\glm\glm\detail\_swizzle_func.hpp
+
+1540995841 d:\libs\glm\glm\detail\type_vec2.inl
+	"./compute_vector_relational.hpp"
+
+1533822421 d:\libs\glm\glm\detail\compute_vector_relational.hpp
+	"setup.hpp"
+	<limits>
+
+1537180351 d:\libs\glm\glm\ext\vector_bool2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_float2.hpp
+	"../detail/type_vec2.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_float2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_double2.hpp
+	"../detail/type_vec2.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_double2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_int2.hpp
+	"../detail/type_vec2.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_int2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_uint2.hpp
+	"../detail/type_vec2.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_uint2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1533822423 d:\libs\glm\glm\vec3.hpp
+	"./ext/vector_bool3.hpp"
+	"./ext/vector_bool3_precision.hpp"
+	"./ext/vector_float3.hpp"
+	"./ext/vector_float3_precision.hpp"
+	"./ext/vector_double3.hpp"
+	"./ext/vector_double3_precision.hpp"
+	"./ext/vector_int3.hpp"
+	"./ext/vector_int3_precision.hpp"
+	"./ext/vector_uint3.hpp"
+	"./ext/vector_uint3_precision.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_bool3.hpp
+	"../detail/type_vec3.hpp"
+
+1540995841 d:\libs\glm\glm\detail\type_vec3.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1540995841 d:\libs\glm\glm\detail\type_vec3.inl
+	"compute_vector_relational.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_bool3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_float3.hpp
+	"../detail/type_vec3.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_float3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_double3.hpp
+	"../detail/type_vec3.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_double3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_int3.hpp
+	"../detail/type_vec3.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_int3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_uint3.hpp
+	"../detail/type_vec3.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_uint3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1533822423 d:\libs\glm\glm\vec4.hpp
+	"./ext/vector_bool4.hpp"
+	"./ext/vector_bool4_precision.hpp"
+	"./ext/vector_float4.hpp"
+	"./ext/vector_float4_precision.hpp"
+	"./ext/vector_double4.hpp"
+	"./ext/vector_double4_precision.hpp"
+	"./ext/vector_int4.hpp"
+	"./ext/vector_int4_precision.hpp"
+	"./ext/vector_uint4.hpp"
+	"./ext/vector_uint4_precision.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_bool4.hpp
+	"../detail/type_vec4.hpp"
+
+1540995841 d:\libs\glm\glm\detail\type_vec4.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1540995841 d:\libs\glm\glm\detail\type_vec4.inl
+	"compute_vector_relational.hpp"
+	"type_vec4_simd.inl"
+
+1535535170 d:\libs\glm\glm\detail\type_vec4_simd.inl
+
+1537180351 d:\libs\glm\glm\ext\vector_bool4_precision.hpp
+	"../detail/type_vec4.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_float4.hpp
+	"../detail/type_vec4.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_float4_precision.hpp
+	"../detail/type_vec4.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_double4.hpp
+	"../detail/type_vec4.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_double4_precision.hpp
+	"../detail/setup.hpp"
+	"../detail/type_vec4.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_int4.hpp
+	"../detail/type_vec4.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_int4_precision.hpp
+	"../detail/type_vec4.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_uint4.hpp
+	"../detail/type_vec4.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_uint4_precision.hpp
+	"../detail/type_vec4.hpp"
+
+1533822422 d:\libs\glm\glm\mat2x2.hpp
+	"./ext/matrix_double2x2.hpp"
+	"./ext/matrix_double2x2_precision.hpp"
+	"./ext/matrix_float2x2.hpp"
+	"./ext/matrix_float2x2_precision.hpp"
+
+1537180351 d:\libs\glm\glm\ext\matrix_double2x2.hpp
+	"../detail/type_mat2x2.hpp"
+
+1533822422 d:\libs\glm\glm\detail\type_mat2x2.hpp
+	"type_vec2.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1535535170 d:\libs\glm\glm\detail\type_mat2x2.inl
+	"../matrix.hpp"
+
+1537180351 d:\libs\glm\glm\matrix.hpp
+	"detail/qualifier.hpp"
+	"detail/setup.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"detail/func_matrix.inl"
+
+1533822422 d:\libs\glm\glm\mat2x3.hpp
+	"./ext/matrix_double2x3.hpp"
+	"./ext/matrix_double2x3_precision.hpp"
+	"./ext/matrix_float2x3.hpp"
+	"./ext/matrix_float2x3_precision.hpp"
+
+1537180351 d:\libs\glm\glm\ext\matrix_double2x3.hpp
+	"../detail/type_mat2x3.hpp"
+
+1533822422 d:\libs\glm\glm\detail\type_mat2x3.hpp
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1535535170 d:\libs\glm\glm\detail\type_mat2x3.inl
+
+1537180351 d:\libs\glm\glm\ext\matrix_double2x3_precision.hpp
+	"../detail/type_mat2x3.hpp"
+
+1537180351 d:\libs\glm\glm\ext\matrix_float2x3.hpp
+	"../detail/type_mat2x3.hpp"
+
+1537180351 d:\libs\glm\glm\ext\matrix_float2x3_precision.hpp
+	"../detail/type_mat2x3.hpp"
+
+1533822422 d:\libs\glm\glm\mat2x4.hpp
+	"./ext/matrix_double2x4.hpp"
+	"./ext/matrix_double2x4_precision.hpp"
+	"./ext/matrix_float2x4.hpp"
+	"./ext/matrix_float2x4_precision.hpp"
+
+1537180351 d:\libs\glm\glm\ext\matrix_double2x4.hpp
+	"../detail/type_mat2x4.hpp"
+
+1533822422 d:\libs\glm\glm\detail\type_mat2x4.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1535535170 d:\libs\glm\glm\detail\type_mat2x4.inl
+
+1537180351 d:\libs\glm\glm\ext\matrix_double2x4_precision.hpp
+	"../detail/type_mat2x4.hpp"
+
+1537180351 d:\libs\glm\glm\ext\matrix_float2x4.hpp
+	"../detail/type_mat2x4.hpp"
+
+1537180351 d:\libs\glm\glm\ext\matrix_float2x4_precision.hpp
+	"../detail/type_mat2x4.hpp"
+
+1533822422 d:\libs\glm\glm\mat3x2.hpp
+	"./ext/matrix_double3x2.hpp"
+	"./ext/matrix_double3x2_precision.hpp"
+	"./ext/matrix_float3x2.hpp"
+	"./ext/matrix_float3x2_precision.hpp"
+
+1537180351 d:\libs\glm\glm\ext\matrix_double3x2.hpp
+	"../detail/type_mat3x2.hpp"
+
+1533822422 d:\libs\glm\glm\detail\type_mat3x2.hpp
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1535535170 d:\libs\glm\glm\detail\type_mat3x2.inl
+
+1537180351 d:\libs\glm\glm\ext\matrix_double3x2_precision.hpp
+	"../detail/type_mat3x2.hpp"
+
+1535535170 d:\libs\glm\glm\ext\matrix_float3x2.hpp
+	"../detail/type_mat3x2.hpp"
+
+1537180351 d:\libs\glm\glm\ext\matrix_float3x2_precision.hpp
+	"../detail/type_mat3x2.hpp"
+
+1533822422 d:\libs\glm\glm\mat3x3.hpp
+	"./ext/matrix_double3x3.hpp"
+	"./ext/matrix_double3x3_precision.hpp"
+	"./ext/matrix_float3x3.hpp"
+	"./ext/matrix_float3x3_precision.hpp"
+
+1537180351 d:\libs\glm\glm\ext\matrix_double3x3.hpp
+	"../detail/type_mat3x3.hpp"
+
+1533822422 d:\libs\glm\glm\detail\type_mat3x3.hpp
+	"type_vec3.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1535535170 d:\libs\glm\glm\detail\type_mat3x3.inl
+	"../matrix.hpp"
+
+1537180351 d:\libs\glm\glm\ext\matrix_double3x3_precision.hpp
+	"../detail/type_mat3x3.hpp"
+
+1537180351 d:\libs\glm\glm\ext\matrix_float3x3.hpp
+	"../detail/type_mat3x3.hpp"
+
+1537180351 d:\libs\glm\glm\ext\matrix_float3x3_precision.hpp
+	"../detail/type_mat3x3.hpp"
+
+1533822422 d:\libs\glm\glm\mat3x4.hpp
+	"./ext/matrix_double3x4.hpp"
+	"./ext/matrix_double3x4_precision.hpp"
+	"./ext/matrix_float3x4.hpp"
+	"./ext/matrix_float3x4_precision.hpp"
+
+1537180351 d:\libs\glm\glm\ext\matrix_double3x4.hpp
+	"../detail/type_mat3x4.hpp"
+
+1533822422 d:\libs\glm\glm\detail\type_mat3x4.hpp
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1535535170 d:\libs\glm\glm\detail\type_mat3x4.inl
+
+1537180351 d:\libs\glm\glm\ext\matrix_double3x4_precision.hpp
+	"../detail/type_mat3x4.hpp"
+
+1537180351 d:\libs\glm\glm\ext\matrix_float3x4.hpp
+	"../detail/type_mat3x4.hpp"
+
+1537180351 d:\libs\glm\glm\ext\matrix_float3x4_precision.hpp
+	"../detail/type_mat3x4.hpp"
+
+1533822422 d:\libs\glm\glm\mat4x2.hpp
+	"./ext/matrix_double4x2.hpp"
+	"./ext/matrix_double4x2_precision.hpp"
+	"./ext/matrix_float4x2.hpp"
+	"./ext/matrix_float4x2_precision.hpp"
+
+1537180351 d:\libs\glm\glm\ext\matrix_double4x2.hpp
+	"../detail/type_mat4x2.hpp"
+
+1533822422 d:\libs\glm\glm\detail\type_mat4x2.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1535535170 d:\libs\glm\glm\detail\type_mat4x2.inl
+
+1537180351 d:\libs\glm\glm\ext\matrix_double4x2_precision.hpp
+	"../detail/type_mat4x2.hpp"
+
+1537180351 d:\libs\glm\glm\ext\matrix_float4x2.hpp
+	"../detail/type_mat4x2.hpp"
+
+1537180351 d:\libs\glm\glm\ext\matrix_float4x2_precision.hpp
+	"../detail/type_mat2x2.hpp"
+
+1533822422 d:\libs\glm\glm\mat4x3.hpp
+	"./ext/matrix_double4x3.hpp"
+	"./ext/matrix_double4x3_precision.hpp"
+	"./ext/matrix_float4x3.hpp"
+	"./ext/matrix_float4x3_precision.hpp"
+
+1537180351 d:\libs\glm\glm\ext\matrix_double4x3.hpp
+	"../detail/type_mat4x3.hpp"
+
+1533822422 d:\libs\glm\glm\detail\type_mat4x3.hpp
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1535535170 d:\libs\glm\glm\detail\type_mat4x3.inl
+
+1537180351 d:\libs\glm\glm\ext\matrix_double4x3_precision.hpp
+	"../detail/type_mat4x3.hpp"
+
+1537180351 d:\libs\glm\glm\ext\matrix_float4x3.hpp
+	"../detail/type_mat4x3.hpp"
+
+1537180351 d:\libs\glm\glm\ext\matrix_float4x3_precision.hpp
+	"../detail/type_mat4x3.hpp"
+
+1533822422 d:\libs\glm\glm\mat4x4.hpp
+	"./ext/matrix_double4x4.hpp"
+	"./ext/matrix_double4x4_precision.hpp"
+	"./ext/matrix_float4x4.hpp"
+	"./ext/matrix_float4x4_precision.hpp"
+
+1537180351 d:\libs\glm\glm\ext\matrix_double4x4.hpp
+	"../detail/type_mat4x4.hpp"
+
+1533822422 d:\libs\glm\glm\detail\type_mat4x4.hpp
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1535535170 d:\libs\glm\glm\detail\type_mat4x4.inl
+	"../matrix.hpp"
+	"type_mat4x4_simd.inl"
+
+1533822422 d:\libs\glm\glm\detail\type_mat4x4_simd.inl
+
+1537180351 d:\libs\glm\glm\ext\matrix_double4x4_precision.hpp
+	"../detail/type_mat4x4.hpp"
+
+1537180351 d:\libs\glm\glm\ext\matrix_float4x4.hpp
+	"../detail/type_mat4x4.hpp"
+
+1537180351 d:\libs\glm\glm\ext\matrix_float4x4_precision.hpp
+	"../detail/type_mat4x4.hpp"
+
+1535535170 d:\libs\glm\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+	"func_matrix_simd.inl"
+
+1537180351 d:\libs\glm\glm\geometric.hpp
+	"detail/type_vec3.hpp"
+	"detail/func_geometric.inl"
+
+1537180351 d:\libs\glm\glm\detail\func_geometric.inl
+	"../exponential.hpp"
+	"../common.hpp"
+	"func_geometric_simd.inl"
+
+1537180351 d:\libs\glm\glm\exponential.hpp
+	"detail/type_vec1.hpp"
+	"detail/type_vec2.hpp"
+	"detail/type_vec3.hpp"
+	"detail/type_vec4.hpp"
+	<cmath>
+	"detail/func_exponential.inl"
+
+1540995841 d:\libs\glm\glm\detail\type_vec1.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1540995841 d:\libs\glm\glm\detail\type_vec1.inl
+	"./compute_vector_relational.hpp"
+
+1533822421 d:\libs\glm\glm\detail\func_exponential.inl
+	"../vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+	"func_exponential_simd.inl"
+
+1537180351 d:\libs\glm\glm\vector_relational.hpp
+	"detail/qualifier.hpp"
+	"detail/setup.hpp"
+	"detail/func_vector_relational.inl"
+
+1535535170 d:\libs\glm\glm\detail\func_vector_relational.inl
+	"func_vector_relational_simd.inl"
+
+1535535170 d:\libs\glm\glm\detail\func_vector_relational_simd.inl
+
+1535535170 d:\libs\glm\glm\detail\_vectorize.hpp
+
+1533822421 d:\libs\glm\glm\detail\func_exponential_simd.inl
+	"../simd/exponential.h"
+
+1531735568 d:\libs\glm\glm\simd\exponential.h
+	"platform.h"
+
+1537180351 d:\libs\glm\glm\common.hpp
+	"detail/qualifier.hpp"
+	"detail/_fixes.hpp"
+	"detail/func_common.inl"
+
+1537180351 d:\libs\glm\glm\detail\func_common.inl
+	"../vector_relational.hpp"
+	"compute_common.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+	"func_common_simd.inl"
+
+1537180351 d:\libs\glm\glm\detail\compute_common.hpp
+	"setup.hpp"
+	<limits>
+
+1535535170 d:\libs\glm\glm\detail\func_common_simd.inl
+	"../simd/common.h"
+	<immintrin.h>
+
+1531735568 d:\libs\glm\glm\simd\common.h
+	"platform.h"
+
+1525699382 d:\libs\glm\glm\detail\func_geometric_simd.inl
+	"../simd/geometric.h"
+
+1525699382 d:\libs\glm\glm\simd\geometric.h
+	"common.h"
+
+1535535170 d:\libs\glm\glm\detail\func_matrix_simd.inl
+	"type_mat4x4.hpp"
+	"../geometric.hpp"
+	"../simd/matrix.h"
+	<cstring>
+
+1525699382 d:\libs\glm\glm\simd\matrix.h
+	"geometric.h"
+
+1537180351 d:\libs\glm\glm\ext\matrix_double2x2_precision.hpp
+	"../detail/type_mat2x2.hpp"
+
+1537180351 d:\libs\glm\glm\ext\matrix_float2x2.hpp
+	"../detail/type_mat2x2.hpp"
+
+1537180351 d:\libs\glm\glm\ext\matrix_float2x2_precision.hpp
+	"../detail/type_mat2x2.hpp"
+
+1537180351 d:\libs\glm\glm\trigonometric.hpp
+	"detail/setup.hpp"
+	"detail/qualifier.hpp"
+	"detail/func_trigonometric.inl"
+
+1535535170 d:\libs\glm\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+	"func_trigonometric_simd.inl"
+
+1464689061 d:\libs\glm\glm\detail\func_trigonometric_simd.inl
+
+1537180351 d:\libs\glm\glm\packing.hpp
+	"./ext/vector_uint2.hpp"
+	"./ext/vector_float2.hpp"
+	"./ext/vector_float4.hpp"
+	"detail/func_packing.inl"
+
+1535535170 d:\libs\glm\glm\detail\func_packing.inl
+	"../common.hpp"
+	"type_half.hpp"
+	"func_packing_simd.inl"
+
+1535535170 d:\libs\glm\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1535535170 d:\libs\glm\glm\detail\type_half.inl
+
+1535535170 d:\libs\glm\glm\detail\func_packing_simd.inl
+
+1537180351 d:\libs\glm\glm\integer.hpp
+	"detail/qualifier.hpp"
+	"common.hpp"
+	"vector_relational.hpp"
+	"detail/func_integer.inl"
+
+1540995841 d:\libs\glm\glm\detail\func_integer.inl
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+	"func_integer_simd.inl"
+
+1535535170 d:\libs\glm\glm\detail\func_integer_simd.inl
+	"../simd/integer.h"
+
+1525699382 d:\libs\glm\glm\simd\integer.h
+
+1535535170 d:\libs\glm\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../ext/matrix_projection.hpp"
+	"../ext/matrix_clip_space.hpp"
+	"../ext/matrix_transform.hpp"
+	"matrix_transform.inl"
+
+1537180351 d:\libs\glm\glm\ext\matrix_projection.hpp
+	"../gtc/constants.hpp"
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+	"matrix_projection.inl"
+
+1535535170 d:\libs\glm\glm\gtc\constants.hpp
+	"../ext/scalar_constants.hpp"
+	"constants.inl"
+
+1537180351 d:\libs\glm\glm\ext\scalar_constants.hpp
+	"../detail/setup.hpp"
+	"scalar_constants.inl"
+
+1535535170 d:\libs\glm\glm\ext\scalar_constants.inl
+	<limits>
+
+1535535170 d:\libs\glm\glm\gtc\constants.inl
+
+1535535170 d:\libs\glm\glm\ext\matrix_projection.inl
+
+1537180351 d:\libs\glm\glm\ext\matrix_clip_space.hpp
+	"../ext/scalar_constants.hpp"
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"matrix_clip_space.inl"
+
+1535535170 d:\libs\glm\glm\ext\matrix_clip_space.inl
+
+1537180351 d:\libs\glm\glm\ext\matrix_transform.hpp
+	"../gtc/constants.hpp"
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+	"matrix_transform.inl"
+
+1535535170 d:\libs\glm\glm\ext\matrix_transform.inl
+
+1535535170 d:\libs\glm\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1537180351 d:\libs\glm\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../gtc/vec1.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1537180351 d:\libs\glm\glm\gtc\quaternion.hpp
+	"../gtc/constants.hpp"
+	"../gtc/matrix_transform.hpp"
+	"../ext/vector_relational.hpp"
+	"../ext/quaternion_common.hpp"
+	"../ext/quaternion_float.hpp"
+	"../ext/quaternion_float_precision.hpp"
+	"../ext/quaternion_double.hpp"
+	"../ext/quaternion_double_precision.hpp"
+	"../ext/quaternion_relational.hpp"
+	"../ext/quaternion_geometric.hpp"
+	"../ext/quaternion_trigonometric.hpp"
+	"../ext/quaternion_transform.hpp"
+	"../detail/type_mat3x3.hpp"
+	"../detail/type_mat4x4.hpp"
+	"../detail/type_vec3.hpp"
+	"../detail/type_vec4.hpp"
+	"quaternion.inl"
+
+1540995841 d:\libs\glm\glm\ext\vector_relational.hpp
+	"../detail/qualifier.hpp"
+	"vector_relational.inl"
+
+1540995841 d:\libs\glm\glm\ext\vector_relational.inl
+	"../vector_relational.hpp"
+	"../common.hpp"
+	"../detail/qualifier.hpp"
+	"../detail/type_float.hpp"
+
+1540995841 d:\libs\glm\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1537180351 d:\libs\glm\glm\ext\quaternion_common.hpp
+	"../ext/scalar_constants.hpp"
+	"../ext/quaternion_geometric.hpp"
+	"../common.hpp"
+	"../trigonometric.hpp"
+	"../exponential.hpp"
+	<limits>
+	"quaternion_common.inl"
+
+1537180351 d:\libs\glm\glm\ext\quaternion_geometric.hpp
+	"../geometric.hpp"
+	"../exponential.hpp"
+	"../ext/vector_relational.hpp"
+	"quaternion_geometric.inl"
+
+1535535170 d:\libs\glm\glm\ext\quaternion_geometric.inl
+
+1535535170 d:\libs\glm\glm\ext\quaternion_common.inl
+	"quaternion_common_simd.inl"
+
+1535535170 d:\libs\glm\glm\ext\quaternion_common_simd.inl
+
+1537180351 d:\libs\glm\glm\ext\quaternion_float.hpp
+	"../detail/type_quat.hpp"
+
+1540995841 d:\libs\glm\glm\detail\type_quat.hpp
+	"../detail/type_mat3x3.hpp"
+	"../detail/type_mat4x4.hpp"
+	"../detail/type_vec3.hpp"
+	"../detail/type_vec4.hpp"
+	"../ext/vector_relational.hpp"
+	"../ext/quaternion_relational.hpp"
+	"../gtc/constants.hpp"
+	"../gtc/matrix_transform.hpp"
+	"type_quat.inl"
+
+1537180351 d:\libs\glm\glm\ext\quaternion_relational.hpp
+	"../vector_relational.hpp"
+	"quaternion_relational.inl"
+
+1535535170 d:\libs\glm\glm\ext\quaternion_relational.inl
+
+1540995841 d:\libs\glm\glm\detail\type_quat.inl
+	"../trigonometric.hpp"
+	"../exponential.hpp"
+	"../ext/quaternion_geometric.hpp"
+	<limits>
+	"type_quat_simd.inl"
+
+1533822422 d:\libs\glm\glm\detail\type_quat_simd.inl
+
+1537180351 d:\libs\glm\glm\ext\quaternion_float_precision.hpp
+	"../detail/type_quat.hpp"
+
+1537180351 d:\libs\glm\glm\ext\quaternion_double.hpp
+	"../detail/type_quat.hpp"
+
+1537180351 d:\libs\glm\glm\ext\quaternion_double_precision.hpp
+	"../detail/type_quat.hpp"
+
+1537180351 d:\libs\glm\glm\ext\quaternion_trigonometric.hpp
+	"../trigonometric.hpp"
+	"../exponential.hpp"
+	"scalar_constants.hpp"
+	"vector_relational.hpp"
+	<limits>
+	"quaternion_trigonometric.inl"
+
+1535535170 d:\libs\glm\glm\ext\quaternion_trigonometric.inl
+
+1537180351 d:\libs\glm\glm\ext\quaternion_transform.hpp
+	"../common.hpp"
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"quaternion_transform.inl"
+
+1535535170 d:\libs\glm\glm\ext\quaternion_transform.inl
+
+1535535170 d:\libs\glm\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	"epsilon.hpp"
+	<limits>
+	"quaternion_simd.inl"
+
+1531735568 d:\libs\glm\glm\gtc\epsilon.hpp
+	"../detail/setup.hpp"
+	"../detail/qualifier.hpp"
+	"epsilon.inl"
+
+1533822422 d:\libs\glm\glm\gtc\epsilon.inl
+	"../vector_relational.hpp"
+	"../common.hpp"
+
+1535535170 d:\libs\glm\glm\gtc\quaternion_simd.inl
+
+1533822422 d:\libs\glm\glm\gtc\vec1.hpp
+	"../ext/vector_bool1.hpp"
+	"../ext/vector_bool1_precision.hpp"
+	"../ext/vector_float1.hpp"
+	"../ext/vector_float1_precision.hpp"
+	"../ext/vector_double1.hpp"
+	"../ext/vector_double1_precision.hpp"
+	"../ext/vector_int1.hpp"
+	"../ext/vector_int1_precision.hpp"
+	"../ext/vector_uint1.hpp"
+	"../ext/vector_uint1_precision.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_bool1.hpp
+	"../detail/type_vec1.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_bool1_precision.hpp
+	"../detail/type_vec1.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_float1.hpp
+	"../detail/type_vec1.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_float1_precision.hpp
+	"../detail/type_vec1.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_double1.hpp
+	"../detail/type_vec1.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_double1_precision.hpp
+	"../detail/type_vec1.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_int1.hpp
+	"../detail/type_vec1.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_int1_precision.hpp
+	"../detail/type_vec1.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_uint1.hpp
+	"../detail/type_vec1.hpp"
+
+1537180351 d:\libs\glm\glm\ext\vector_uint1_precision.hpp
+	"../detail/type_vec1.hpp"
+
+1533822422 d:\libs\glm\glm\gtc\type_ptr.inl
+	<cstring>
+
+1514241703 d:\libs\sdl2_image-2.0.2\i686-w64-mingw32\include\sdl2\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541001582 d:\libs\sdl2_image-2.0.4\i686-w64-mingw32\include\sdl2\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541001602 d:\libs\sdl2_image-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_joystick.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_shape.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<wchar.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	<sal.h>
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\begin_code.h
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\close_code.h
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	<process.h>
+	<stdlib.h>
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<arm_neon.h>
+	<mm3dnow.h>
+	<immintrin.h>
+	<mmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<pmmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"SDL_endian.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_sensor.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_shape.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540997982 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2_image-2.0.4\i686-w64-mingw32\include\sdl2\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1501501581 c:\users\digao\onedrive\documentos\c_c++\libs\glew-2.1.0\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_opengl.h
+	"SDL_config.h"
+	"gl_mangle.h"
+	<windows.h>
+	"SDL_opengl_glext.h"
+
+1540998544 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2-2.0.9\i686-w64-mingw32\include\sdl2\sdl_opengl_glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\glm.hpp
+	"detail/_fixes.hpp"
+	"detail/setup.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\_fixes.hpp
+	<cmath>
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	"../simd/platform.h"
+	<cstdint>
+	<type_traits>
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\simd\platform.h
+	<cuda.h>
+	<immintrin.h>
+	<immintrin.h>
+	<popcntintrin.h>
+	<nmmintrin.h>
+	<smmintrin.h>
+	<tmmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\fwd.hpp
+	"detail/qualifier.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\qualifier.hpp
+	"setup.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\vec2.hpp
+	"./ext/vector_bool2.hpp"
+	"./ext/vector_bool2_precision.hpp"
+	"./ext/vector_float2.hpp"
+	"./ext/vector_float2_precision.hpp"
+	"./ext/vector_double2.hpp"
+	"./ext/vector_double2_precision.hpp"
+	"./ext/vector_int2.hpp"
+	"./ext/vector_int2_precision.hpp"
+	"./ext/vector_uint2.hpp"
+	"./ext/vector_uint2_precision.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_bool2.hpp
+	"../detail/type_vec2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_vec2.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\_swizzle.hpp
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\_swizzle_func.hpp
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_vec2.inl
+	"./compute_vector_relational.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\compute_vector_relational.hpp
+	"setup.hpp"
+	<limits>
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_bool2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_float2.hpp
+	"../detail/type_vec2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_float2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_double2.hpp
+	"../detail/type_vec2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_double2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_int2.hpp
+	"../detail/type_vec2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_int2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_uint2.hpp
+	"../detail/type_vec2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_uint2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\vec3.hpp
+	"./ext/vector_bool3.hpp"
+	"./ext/vector_bool3_precision.hpp"
+	"./ext/vector_float3.hpp"
+	"./ext/vector_float3_precision.hpp"
+	"./ext/vector_double3.hpp"
+	"./ext/vector_double3_precision.hpp"
+	"./ext/vector_int3.hpp"
+	"./ext/vector_int3_precision.hpp"
+	"./ext/vector_uint3.hpp"
+	"./ext/vector_uint3_precision.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_bool3.hpp
+	"../detail/type_vec3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_vec3.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_vec3.inl
+	"compute_vector_relational.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_bool3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_float3.hpp
+	"../detail/type_vec3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_float3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_double3.hpp
+	"../detail/type_vec3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_double3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_int3.hpp
+	"../detail/type_vec3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_int3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_uint3.hpp
+	"../detail/type_vec3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_uint3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\vec4.hpp
+	"./ext/vector_bool4.hpp"
+	"./ext/vector_bool4_precision.hpp"
+	"./ext/vector_float4.hpp"
+	"./ext/vector_float4_precision.hpp"
+	"./ext/vector_double4.hpp"
+	"./ext/vector_double4_precision.hpp"
+	"./ext/vector_int4.hpp"
+	"./ext/vector_int4_precision.hpp"
+	"./ext/vector_uint4.hpp"
+	"./ext/vector_uint4_precision.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_bool4.hpp
+	"../detail/type_vec4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_vec4.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_vec4.inl
+	"compute_vector_relational.hpp"
+	"type_vec4_simd.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_vec4_simd.inl
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_bool4_precision.hpp
+	"../detail/type_vec4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_float4.hpp
+	"../detail/type_vec4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_float4_precision.hpp
+	"../detail/type_vec4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_double4.hpp
+	"../detail/type_vec4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_double4_precision.hpp
+	"../detail/setup.hpp"
+	"../detail/type_vec4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_int4.hpp
+	"../detail/type_vec4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_int4_precision.hpp
+	"../detail/type_vec4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_uint4.hpp
+	"../detail/type_vec4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_uint4_precision.hpp
+	"../detail/type_vec4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\mat2x2.hpp
+	"./ext/matrix_double2x2.hpp"
+	"./ext/matrix_double2x2_precision.hpp"
+	"./ext/matrix_float2x2.hpp"
+	"./ext/matrix_float2x2_precision.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double2x2.hpp
+	"../detail/type_mat2x2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat2x2.hpp
+	"type_vec2.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat2x2.inl
+	"../matrix.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\matrix.hpp
+	"detail/qualifier.hpp"
+	"detail/setup.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"detail/func_matrix.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\mat2x3.hpp
+	"./ext/matrix_double2x3.hpp"
+	"./ext/matrix_double2x3_precision.hpp"
+	"./ext/matrix_float2x3.hpp"
+	"./ext/matrix_float2x3_precision.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double2x3.hpp
+	"../detail/type_mat2x3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat2x3.hpp
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat2x3.inl
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double2x3_precision.hpp
+	"../detail/type_mat2x3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float2x3.hpp
+	"../detail/type_mat2x3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float2x3_precision.hpp
+	"../detail/type_mat2x3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\mat2x4.hpp
+	"./ext/matrix_double2x4.hpp"
+	"./ext/matrix_double2x4_precision.hpp"
+	"./ext/matrix_float2x4.hpp"
+	"./ext/matrix_float2x4_precision.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double2x4.hpp
+	"../detail/type_mat2x4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat2x4.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat2x4.inl
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double2x4_precision.hpp
+	"../detail/type_mat2x4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float2x4.hpp
+	"../detail/type_mat2x4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float2x4_precision.hpp
+	"../detail/type_mat2x4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\mat3x2.hpp
+	"./ext/matrix_double3x2.hpp"
+	"./ext/matrix_double3x2_precision.hpp"
+	"./ext/matrix_float3x2.hpp"
+	"./ext/matrix_float3x2_precision.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double3x2.hpp
+	"../detail/type_mat3x2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat3x2.hpp
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat3x2.inl
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double3x2_precision.hpp
+	"../detail/type_mat3x2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float3x2.hpp
+	"../detail/type_mat3x2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float3x2_precision.hpp
+	"../detail/type_mat3x2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\mat3x3.hpp
+	"./ext/matrix_double3x3.hpp"
+	"./ext/matrix_double3x3_precision.hpp"
+	"./ext/matrix_float3x3.hpp"
+	"./ext/matrix_float3x3_precision.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double3x3.hpp
+	"../detail/type_mat3x3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat3x3.hpp
+	"type_vec3.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat3x3.inl
+	"../matrix.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double3x3_precision.hpp
+	"../detail/type_mat3x3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float3x3.hpp
+	"../detail/type_mat3x3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float3x3_precision.hpp
+	"../detail/type_mat3x3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\mat3x4.hpp
+	"./ext/matrix_double3x4.hpp"
+	"./ext/matrix_double3x4_precision.hpp"
+	"./ext/matrix_float3x4.hpp"
+	"./ext/matrix_float3x4_precision.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double3x4.hpp
+	"../detail/type_mat3x4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat3x4.hpp
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat3x4.inl
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double3x4_precision.hpp
+	"../detail/type_mat3x4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float3x4.hpp
+	"../detail/type_mat3x4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float3x4_precision.hpp
+	"../detail/type_mat3x4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\mat4x2.hpp
+	"./ext/matrix_double4x2.hpp"
+	"./ext/matrix_double4x2_precision.hpp"
+	"./ext/matrix_float4x2.hpp"
+	"./ext/matrix_float4x2_precision.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double4x2.hpp
+	"../detail/type_mat4x2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat4x2.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat4x2.inl
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double4x2_precision.hpp
+	"../detail/type_mat4x2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float4x2.hpp
+	"../detail/type_mat4x2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float4x2_precision.hpp
+	"../detail/type_mat2x2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\mat4x3.hpp
+	"./ext/matrix_double4x3.hpp"
+	"./ext/matrix_double4x3_precision.hpp"
+	"./ext/matrix_float4x3.hpp"
+	"./ext/matrix_float4x3_precision.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double4x3.hpp
+	"../detail/type_mat4x3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat4x3.hpp
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat4x3.inl
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double4x3_precision.hpp
+	"../detail/type_mat4x3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float4x3.hpp
+	"../detail/type_mat4x3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float4x3_precision.hpp
+	"../detail/type_mat4x3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\mat4x4.hpp
+	"./ext/matrix_double4x4.hpp"
+	"./ext/matrix_double4x4_precision.hpp"
+	"./ext/matrix_float4x4.hpp"
+	"./ext/matrix_float4x4_precision.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double4x4.hpp
+	"../detail/type_mat4x4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat4x4.hpp
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat4x4.inl
+	"../matrix.hpp"
+	"type_mat4x4_simd.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat4x4_simd.inl
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double4x4_precision.hpp
+	"../detail/type_mat4x4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float4x4.hpp
+	"../detail/type_mat4x4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float4x4_precision.hpp
+	"../detail/type_mat4x4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+	"func_matrix_simd.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\geometric.hpp
+	"detail/type_vec3.hpp"
+	"detail/func_geometric.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\func_geometric.inl
+	"../exponential.hpp"
+	"../common.hpp"
+	"func_geometric_simd.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\exponential.hpp
+	"detail/type_vec1.hpp"
+	"detail/type_vec2.hpp"
+	"detail/type_vec3.hpp"
+	"detail/type_vec4.hpp"
+	<cmath>
+	"detail/func_exponential.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_vec1.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_vec1.inl
+	"./compute_vector_relational.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\func_exponential.inl
+	"../vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+	"func_exponential_simd.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\vector_relational.hpp
+	"detail/qualifier.hpp"
+	"detail/setup.hpp"
+	"detail/func_vector_relational.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\func_vector_relational.inl
+	"func_vector_relational_simd.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\func_vector_relational_simd.inl
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\_vectorize.hpp
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\func_exponential_simd.inl
+	"../simd/exponential.h"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\simd\exponential.h
+	"platform.h"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\common.hpp
+	"detail/qualifier.hpp"
+	"detail/_fixes.hpp"
+	"detail/func_common.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\func_common.inl
+	"../vector_relational.hpp"
+	"compute_common.hpp"
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+	"func_common_simd.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\compute_common.hpp
+	"setup.hpp"
+	<limits>
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\func_common_simd.inl
+	"../simd/common.h"
+	<immintrin.h>
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\simd\common.h
+	"platform.h"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\func_geometric_simd.inl
+	"../simd/geometric.h"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\simd\geometric.h
+	"common.h"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\func_matrix_simd.inl
+	"type_mat4x4.hpp"
+	"../geometric.hpp"
+	"../simd/matrix.h"
+	<cstring>
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\simd\matrix.h
+	"geometric.h"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double2x2_precision.hpp
+	"../detail/type_mat2x2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float2x2.hpp
+	"../detail/type_mat2x2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float2x2_precision.hpp
+	"../detail/type_mat2x2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\trigonometric.hpp
+	"detail/setup.hpp"
+	"detail/qualifier.hpp"
+	"detail/func_trigonometric.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+	"func_trigonometric_simd.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\func_trigonometric_simd.inl
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\packing.hpp
+	"./ext/vector_uint2.hpp"
+	"./ext/vector_float2.hpp"
+	"./ext/vector_float4.hpp"
+	"detail/func_packing.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\func_packing.inl
+	"../common.hpp"
+	"type_half.hpp"
+	"func_packing_simd.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_half.inl
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\func_packing_simd.inl
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\integer.hpp
+	"detail/qualifier.hpp"
+	"common.hpp"
+	"vector_relational.hpp"
+	"detail/func_integer.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\func_integer.inl
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+	"func_integer_simd.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\func_integer_simd.inl
+	"../simd/integer.h"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\simd\integer.h
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../ext/matrix_projection.hpp"
+	"../ext/matrix_clip_space.hpp"
+	"../ext/matrix_transform.hpp"
+	"matrix_transform.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_projection.hpp
+	"../gtc/constants.hpp"
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+	"matrix_projection.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\gtc\constants.hpp
+	"../ext/scalar_constants.hpp"
+	"constants.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\scalar_constants.hpp
+	"../detail/setup.hpp"
+	"scalar_constants.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\scalar_constants.inl
+	<limits>
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\gtc\constants.inl
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_projection.inl
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_clip_space.hpp
+	"../ext/scalar_constants.hpp"
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"matrix_clip_space.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_clip_space.inl
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_transform.hpp
+	"../gtc/constants.hpp"
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+	"matrix_transform.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_transform.inl
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../gtc/vec1.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\gtc\quaternion.hpp
+	"../gtc/constants.hpp"
+	"../gtc/matrix_transform.hpp"
+	"../ext/vector_relational.hpp"
+	"../ext/quaternion_common.hpp"
+	"../ext/quaternion_float.hpp"
+	"../ext/quaternion_float_precision.hpp"
+	"../ext/quaternion_double.hpp"
+	"../ext/quaternion_double_precision.hpp"
+	"../ext/quaternion_relational.hpp"
+	"../ext/quaternion_geometric.hpp"
+	"../ext/quaternion_trigonometric.hpp"
+	"../ext/quaternion_transform.hpp"
+	"../detail/type_mat3x3.hpp"
+	"../detail/type_mat4x4.hpp"
+	"../detail/type_vec3.hpp"
+	"../detail/type_vec4.hpp"
+	"quaternion.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_relational.hpp
+	"../detail/qualifier.hpp"
+	"vector_relational.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_relational.inl
+	"../vector_relational.hpp"
+	"../common.hpp"
+	"../detail/qualifier.hpp"
+	"../detail/type_float.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_common.hpp
+	"../ext/scalar_constants.hpp"
+	"../ext/quaternion_geometric.hpp"
+	"../common.hpp"
+	"../trigonometric.hpp"
+	"../exponential.hpp"
+	<limits>
+	"quaternion_common.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_geometric.hpp
+	"../geometric.hpp"
+	"../exponential.hpp"
+	"../ext/vector_relational.hpp"
+	"quaternion_geometric.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_geometric.inl
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_common.inl
+	"quaternion_common_simd.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_common_simd.inl
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_float.hpp
+	"../detail/type_quat.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_quat.hpp
+	"../detail/type_mat3x3.hpp"
+	"../detail/type_mat4x4.hpp"
+	"../detail/type_vec3.hpp"
+	"../detail/type_vec4.hpp"
+	"../ext/vector_relational.hpp"
+	"../ext/quaternion_relational.hpp"
+	"../gtc/constants.hpp"
+	"../gtc/matrix_transform.hpp"
+	"type_quat.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_relational.hpp
+	"../vector_relational.hpp"
+	"quaternion_relational.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_relational.inl
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_quat.inl
+	"../trigonometric.hpp"
+	"../exponential.hpp"
+	"../ext/quaternion_geometric.hpp"
+	<limits>
+	"type_quat_simd.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\detail\type_quat_simd.inl
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_float_precision.hpp
+	"../detail/type_quat.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_double.hpp
+	"../detail/type_quat.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_double_precision.hpp
+	"../detail/type_quat.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_trigonometric.hpp
+	"../trigonometric.hpp"
+	"../exponential.hpp"
+	"scalar_constants.hpp"
+	"vector_relational.hpp"
+	<limits>
+	"quaternion_trigonometric.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_trigonometric.inl
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_transform.hpp
+	"../common.hpp"
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"quaternion_transform.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_transform.inl
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	"epsilon.hpp"
+	<limits>
+	"quaternion_simd.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\gtc\epsilon.hpp
+	"../detail/setup.hpp"
+	"../detail/qualifier.hpp"
+	"epsilon.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\gtc\epsilon.inl
+	"../vector_relational.hpp"
+	"../common.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\gtc\quaternion_simd.inl
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\gtc\vec1.hpp
+	"../ext/vector_bool1.hpp"
+	"../ext/vector_bool1_precision.hpp"
+	"../ext/vector_float1.hpp"
+	"../ext/vector_float1_precision.hpp"
+	"../ext/vector_double1.hpp"
+	"../ext/vector_double1_precision.hpp"
+	"../ext/vector_int1.hpp"
+	"../ext/vector_int1_precision.hpp"
+	"../ext/vector_uint1.hpp"
+	"../ext/vector_uint1_precision.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_bool1.hpp
+	"../detail/type_vec1.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_bool1_precision.hpp
+	"../detail/type_vec1.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_float1.hpp
+	"../detail/type_vec1.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_float1_precision.hpp
+	"../detail/type_vec1.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_double1.hpp
+	"../detail/type_vec1.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_double1_precision.hpp
+	"../detail/type_vec1.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_int1.hpp
+	"../detail/type_vec1.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_int1_precision.hpp
+	"../detail/type_vec1.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_uint1.hpp
+	"../detail/type_vec1.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\ext\vector_uint1_precision.hpp
+	"../detail/type_vec1.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\c_c++\libs\glm-0.9.9.5\glm\gtc\type_ptr.inl
+	<cstring>
+
+1547322281 c:\users\digao\onedrive\documentos\c_c++\libs\sdl2_ttf-2.0.15\i686-w64-mingw32\include\sdl2\sdl_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1665095745 source:c:\users\digao\onedrive\documentos\programming\c_c++\old\learnopengl\main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<string>
+	<SDL.h>
+	<SDL_image.h>
+	<glew.h>
+	<SDL_opengl.h>
+	<glm.hpp>
+	<gtc/matrix_transform.hpp>
+	<gtc/type_ptr.hpp>
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hidapi.h"
+	"SDL_hints.h"
+	"SDL_joystick.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_metal.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_shape.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"SDL_locale.h"
+	"SDL_misc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<wchar.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	<sal.h>
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+	<winsdkver.h>
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\begin_code.h
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\close_code.h
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<sys/cpuinline.h>
+	<mbarrier.h>
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<endian.h>
+	<endian.h>
+	<sys/endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	<process.h>
+	<process.h>
+	<stdlib.h>
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<arm_neon.h>
+	<altivec.h>
+	<arm_neon.h>
+	<armintr.h>
+	<arm_neon.h>
+	<arm64intr.h>
+	<arm64_neon.h>
+	<mm3dnow.h>
+	<immintrin.h>
+	<mmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<pmmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"SDL_endian.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_sensor.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_hidapi.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_metal.h
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_shape.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_locale.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_misc.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1501501581 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glew-2.1.0\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_opengl.h
+	"SDL_config.h"
+	"gl_mangle.h"
+	<windows.h>
+	"SDL_opengl_glext.h"
+
+1641849092 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2-2.0.20\x86_64-w64-mingw32\include\sdl2\sdl_opengl_glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1561870398 c:\users\digao\onedrive\documentos\programming\c_c++\libs\sdl2_image-2.0.5\x86_64-w64-mingw32\include\sdl2\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\glm.hpp
+	"detail/_fixes.hpp"
+	"detail/setup.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\_fixes.hpp
+	<cmath>
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	"../simd/platform.h"
+	<cstdint>
+	<type_traits>
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\simd\platform.h
+	<cuda.h>
+	<immintrin.h>
+	<immintrin.h>
+	<popcntintrin.h>
+	<nmmintrin.h>
+	<smmintrin.h>
+	<tmmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\fwd.hpp
+	"detail/qualifier.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\qualifier.hpp
+	"setup.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\vec2.hpp
+	"./ext/vector_bool2.hpp"
+	"./ext/vector_bool2_precision.hpp"
+	"./ext/vector_float2.hpp"
+	"./ext/vector_float2_precision.hpp"
+	"./ext/vector_double2.hpp"
+	"./ext/vector_double2_precision.hpp"
+	"./ext/vector_int2.hpp"
+	"./ext/vector_int2_precision.hpp"
+	"./ext/vector_uint2.hpp"
+	"./ext/vector_uint2_precision.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_bool2.hpp
+	"../detail/type_vec2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_vec2.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\_swizzle.hpp
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\_swizzle_func.hpp
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_vec2.inl
+	"./compute_vector_relational.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\compute_vector_relational.hpp
+	"setup.hpp"
+	<limits>
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_bool2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_float2.hpp
+	"../detail/type_vec2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_float2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_double2.hpp
+	"../detail/type_vec2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_double2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_int2.hpp
+	"../detail/type_vec2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_int2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_uint2.hpp
+	"../detail/type_vec2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_uint2_precision.hpp
+	"../detail/type_vec2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\vec3.hpp
+	"./ext/vector_bool3.hpp"
+	"./ext/vector_bool3_precision.hpp"
+	"./ext/vector_float3.hpp"
+	"./ext/vector_float3_precision.hpp"
+	"./ext/vector_double3.hpp"
+	"./ext/vector_double3_precision.hpp"
+	"./ext/vector_int3.hpp"
+	"./ext/vector_int3_precision.hpp"
+	"./ext/vector_uint3.hpp"
+	"./ext/vector_uint3_precision.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_bool3.hpp
+	"../detail/type_vec3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_vec3.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_vec3.inl
+	"compute_vector_relational.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_bool3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_float3.hpp
+	"../detail/type_vec3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_float3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_double3.hpp
+	"../detail/type_vec3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_double3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_int3.hpp
+	"../detail/type_vec3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_int3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_uint3.hpp
+	"../detail/type_vec3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_uint3_precision.hpp
+	"../detail/type_vec3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\vec4.hpp
+	"./ext/vector_bool4.hpp"
+	"./ext/vector_bool4_precision.hpp"
+	"./ext/vector_float4.hpp"
+	"./ext/vector_float4_precision.hpp"
+	"./ext/vector_double4.hpp"
+	"./ext/vector_double4_precision.hpp"
+	"./ext/vector_int4.hpp"
+	"./ext/vector_int4_precision.hpp"
+	"./ext/vector_uint4.hpp"
+	"./ext/vector_uint4_precision.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_bool4.hpp
+	"../detail/type_vec4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_vec4.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_vec4.inl
+	"compute_vector_relational.hpp"
+	"type_vec4_simd.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_vec4_simd.inl
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_bool4_precision.hpp
+	"../detail/type_vec4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_float4.hpp
+	"../detail/type_vec4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_float4_precision.hpp
+	"../detail/type_vec4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_double4.hpp
+	"../detail/type_vec4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_double4_precision.hpp
+	"../detail/setup.hpp"
+	"../detail/type_vec4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_int4.hpp
+	"../detail/type_vec4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_int4_precision.hpp
+	"../detail/type_vec4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_uint4.hpp
+	"../detail/type_vec4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_uint4_precision.hpp
+	"../detail/type_vec4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\mat2x2.hpp
+	"./ext/matrix_double2x2.hpp"
+	"./ext/matrix_double2x2_precision.hpp"
+	"./ext/matrix_float2x2.hpp"
+	"./ext/matrix_float2x2_precision.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double2x2.hpp
+	"../detail/type_mat2x2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat2x2.hpp
+	"type_vec2.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat2x2.inl
+	"../matrix.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\matrix.hpp
+	"detail/qualifier.hpp"
+	"detail/setup.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"detail/func_matrix.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\mat2x3.hpp
+	"./ext/matrix_double2x3.hpp"
+	"./ext/matrix_double2x3_precision.hpp"
+	"./ext/matrix_float2x3.hpp"
+	"./ext/matrix_float2x3_precision.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double2x3.hpp
+	"../detail/type_mat2x3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat2x3.hpp
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat2x3.inl
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double2x3_precision.hpp
+	"../detail/type_mat2x3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float2x3.hpp
+	"../detail/type_mat2x3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float2x3_precision.hpp
+	"../detail/type_mat2x3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\mat2x4.hpp
+	"./ext/matrix_double2x4.hpp"
+	"./ext/matrix_double2x4_precision.hpp"
+	"./ext/matrix_float2x4.hpp"
+	"./ext/matrix_float2x4_precision.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double2x4.hpp
+	"../detail/type_mat2x4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat2x4.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat2x4.inl
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double2x4_precision.hpp
+	"../detail/type_mat2x4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float2x4.hpp
+	"../detail/type_mat2x4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float2x4_precision.hpp
+	"../detail/type_mat2x4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\mat3x2.hpp
+	"./ext/matrix_double3x2.hpp"
+	"./ext/matrix_double3x2_precision.hpp"
+	"./ext/matrix_float3x2.hpp"
+	"./ext/matrix_float3x2_precision.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double3x2.hpp
+	"../detail/type_mat3x2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat3x2.hpp
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat3x2.inl
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double3x2_precision.hpp
+	"../detail/type_mat3x2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float3x2.hpp
+	"../detail/type_mat3x2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float3x2_precision.hpp
+	"../detail/type_mat3x2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\mat3x3.hpp
+	"./ext/matrix_double3x3.hpp"
+	"./ext/matrix_double3x3_precision.hpp"
+	"./ext/matrix_float3x3.hpp"
+	"./ext/matrix_float3x3_precision.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double3x3.hpp
+	"../detail/type_mat3x3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat3x3.hpp
+	"type_vec3.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat3x3.inl
+	"../matrix.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double3x3_precision.hpp
+	"../detail/type_mat3x3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float3x3.hpp
+	"../detail/type_mat3x3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float3x3_precision.hpp
+	"../detail/type_mat3x3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\mat3x4.hpp
+	"./ext/matrix_double3x4.hpp"
+	"./ext/matrix_double3x4_precision.hpp"
+	"./ext/matrix_float3x4.hpp"
+	"./ext/matrix_float3x4_precision.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double3x4.hpp
+	"../detail/type_mat3x4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat3x4.hpp
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat3x4.inl
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double3x4_precision.hpp
+	"../detail/type_mat3x4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float3x4.hpp
+	"../detail/type_mat3x4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float3x4_precision.hpp
+	"../detail/type_mat3x4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\mat4x2.hpp
+	"./ext/matrix_double4x2.hpp"
+	"./ext/matrix_double4x2_precision.hpp"
+	"./ext/matrix_float4x2.hpp"
+	"./ext/matrix_float4x2_precision.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double4x2.hpp
+	"../detail/type_mat4x2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat4x2.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat4x2.inl
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double4x2_precision.hpp
+	"../detail/type_mat4x2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float4x2.hpp
+	"../detail/type_mat4x2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float4x2_precision.hpp
+	"../detail/type_mat2x2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\mat4x3.hpp
+	"./ext/matrix_double4x3.hpp"
+	"./ext/matrix_double4x3_precision.hpp"
+	"./ext/matrix_float4x3.hpp"
+	"./ext/matrix_float4x3_precision.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double4x3.hpp
+	"../detail/type_mat4x3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat4x3.hpp
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat4x3.inl
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double4x3_precision.hpp
+	"../detail/type_mat4x3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float4x3.hpp
+	"../detail/type_mat4x3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float4x3_precision.hpp
+	"../detail/type_mat4x3.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\mat4x4.hpp
+	"./ext/matrix_double4x4.hpp"
+	"./ext/matrix_double4x4_precision.hpp"
+	"./ext/matrix_float4x4.hpp"
+	"./ext/matrix_float4x4_precision.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double4x4.hpp
+	"../detail/type_mat4x4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat4x4.hpp
+	"type_vec4.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat4x4.inl
+	"../matrix.hpp"
+	"type_mat4x4_simd.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_mat4x4_simd.inl
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double4x4_precision.hpp
+	"../detail/type_mat4x4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float4x4.hpp
+	"../detail/type_mat4x4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float4x4_precision.hpp
+	"../detail/type_mat4x4.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+	"func_matrix_simd.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\geometric.hpp
+	"detail/type_vec3.hpp"
+	"detail/func_geometric.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\func_geometric.inl
+	"../exponential.hpp"
+	"../common.hpp"
+	"func_geometric_simd.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\exponential.hpp
+	"detail/type_vec1.hpp"
+	"detail/type_vec2.hpp"
+	"detail/type_vec3.hpp"
+	"detail/type_vec4.hpp"
+	<cmath>
+	"detail/func_exponential.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_vec1.hpp
+	"qualifier.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_vec1.inl
+	"./compute_vector_relational.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\func_exponential.inl
+	"../vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+	"func_exponential_simd.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\vector_relational.hpp
+	"detail/qualifier.hpp"
+	"detail/setup.hpp"
+	"detail/func_vector_relational.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\func_vector_relational.inl
+	"func_vector_relational_simd.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\func_vector_relational_simd.inl
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\_vectorize.hpp
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\func_exponential_simd.inl
+	"../simd/exponential.h"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\simd\exponential.h
+	"platform.h"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\common.hpp
+	"detail/qualifier.hpp"
+	"detail/_fixes.hpp"
+	"detail/func_common.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\func_common.inl
+	"../vector_relational.hpp"
+	"compute_common.hpp"
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+	"func_common_simd.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\compute_common.hpp
+	"setup.hpp"
+	<limits>
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\func_common_simd.inl
+	"../simd/common.h"
+	<immintrin.h>
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\simd\common.h
+	"platform.h"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\func_geometric_simd.inl
+	"../simd/geometric.h"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\simd\geometric.h
+	"common.h"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\func_matrix_simd.inl
+	"type_mat4x4.hpp"
+	"../geometric.hpp"
+	"../simd/matrix.h"
+	<cstring>
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\simd\matrix.h
+	"geometric.h"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_double2x2_precision.hpp
+	"../detail/type_mat2x2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float2x2.hpp
+	"../detail/type_mat2x2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_float2x2_precision.hpp
+	"../detail/type_mat2x2.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\trigonometric.hpp
+	"detail/setup.hpp"
+	"detail/qualifier.hpp"
+	"detail/func_trigonometric.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+	"func_trigonometric_simd.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\func_trigonometric_simd.inl
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\packing.hpp
+	"./ext/vector_uint2.hpp"
+	"./ext/vector_float2.hpp"
+	"./ext/vector_float4.hpp"
+	"detail/func_packing.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\func_packing.inl
+	"../common.hpp"
+	"type_half.hpp"
+	"func_packing_simd.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_half.inl
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\func_packing_simd.inl
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\integer.hpp
+	"detail/qualifier.hpp"
+	"common.hpp"
+	"vector_relational.hpp"
+	"detail/func_integer.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\func_integer.inl
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+	"func_integer_simd.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\func_integer_simd.inl
+	"../simd/integer.h"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\simd\integer.h
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../ext/matrix_projection.hpp"
+	"../ext/matrix_clip_space.hpp"
+	"../ext/matrix_transform.hpp"
+	"matrix_transform.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_projection.hpp
+	"../gtc/constants.hpp"
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+	"matrix_projection.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\gtc\constants.hpp
+	"../ext/scalar_constants.hpp"
+	"constants.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\scalar_constants.hpp
+	"../detail/setup.hpp"
+	"scalar_constants.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\scalar_constants.inl
+	<limits>
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\gtc\constants.inl
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_projection.inl
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_clip_space.hpp
+	"../ext/scalar_constants.hpp"
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"matrix_clip_space.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_clip_space.inl
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_transform.hpp
+	"../gtc/constants.hpp"
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+	"matrix_transform.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\matrix_transform.inl
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../gtc/vec1.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\gtc\quaternion.hpp
+	"../gtc/constants.hpp"
+	"../gtc/matrix_transform.hpp"
+	"../ext/vector_relational.hpp"
+	"../ext/quaternion_common.hpp"
+	"../ext/quaternion_float.hpp"
+	"../ext/quaternion_float_precision.hpp"
+	"../ext/quaternion_double.hpp"
+	"../ext/quaternion_double_precision.hpp"
+	"../ext/quaternion_relational.hpp"
+	"../ext/quaternion_geometric.hpp"
+	"../ext/quaternion_trigonometric.hpp"
+	"../ext/quaternion_transform.hpp"
+	"../detail/type_mat3x3.hpp"
+	"../detail/type_mat4x4.hpp"
+	"../detail/type_vec3.hpp"
+	"../detail/type_vec4.hpp"
+	"quaternion.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_relational.hpp
+	"../detail/qualifier.hpp"
+	"vector_relational.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_relational.inl
+	"../vector_relational.hpp"
+	"../common.hpp"
+	"../detail/qualifier.hpp"
+	"../detail/type_float.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_common.hpp
+	"../ext/scalar_constants.hpp"
+	"../ext/quaternion_geometric.hpp"
+	"../common.hpp"
+	"../trigonometric.hpp"
+	"../exponential.hpp"
+	<limits>
+	"quaternion_common.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_geometric.hpp
+	"../geometric.hpp"
+	"../exponential.hpp"
+	"../ext/vector_relational.hpp"
+	"quaternion_geometric.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_geometric.inl
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_common.inl
+	"quaternion_common_simd.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_common_simd.inl
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_float.hpp
+	"../detail/type_quat.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_quat.hpp
+	"../detail/type_mat3x3.hpp"
+	"../detail/type_mat4x4.hpp"
+	"../detail/type_vec3.hpp"
+	"../detail/type_vec4.hpp"
+	"../ext/vector_relational.hpp"
+	"../ext/quaternion_relational.hpp"
+	"../gtc/constants.hpp"
+	"../gtc/matrix_transform.hpp"
+	"type_quat.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_relational.hpp
+	"../vector_relational.hpp"
+	"quaternion_relational.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_relational.inl
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_quat.inl
+	"../trigonometric.hpp"
+	"../exponential.hpp"
+	"../ext/quaternion_geometric.hpp"
+	<limits>
+	"type_quat_simd.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\detail\type_quat_simd.inl
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_float_precision.hpp
+	"../detail/type_quat.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_double.hpp
+	"../detail/type_quat.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_double_precision.hpp
+	"../detail/type_quat.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_trigonometric.hpp
+	"../trigonometric.hpp"
+	"../exponential.hpp"
+	"scalar_constants.hpp"
+	"vector_relational.hpp"
+	<limits>
+	"quaternion_trigonometric.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_trigonometric.inl
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_transform.hpp
+	"../common.hpp"
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"quaternion_transform.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\quaternion_transform.inl
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	"epsilon.hpp"
+	<limits>
+	"quaternion_simd.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\gtc\epsilon.hpp
+	"../detail/setup.hpp"
+	"../detail/qualifier.hpp"
+	"epsilon.inl"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\gtc\epsilon.inl
+	"../vector_relational.hpp"
+	"../common.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\gtc\quaternion_simd.inl
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\gtc\vec1.hpp
+	"../ext/vector_bool1.hpp"
+	"../ext/vector_bool1_precision.hpp"
+	"../ext/vector_float1.hpp"
+	"../ext/vector_float1_precision.hpp"
+	"../ext/vector_double1.hpp"
+	"../ext/vector_double1_precision.hpp"
+	"../ext/vector_int1.hpp"
+	"../ext/vector_int1_precision.hpp"
+	"../ext/vector_uint1.hpp"
+	"../ext/vector_uint1_precision.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_bool1.hpp
+	"../detail/type_vec1.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_bool1_precision.hpp
+	"../detail/type_vec1.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_float1.hpp
+	"../detail/type_vec1.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_float1_precision.hpp
+	"../detail/type_vec1.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_double1.hpp
+	"../detail/type_vec1.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_double1_precision.hpp
+	"../detail/type_vec1.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_int1.hpp
+	"../detail/type_vec1.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_int1_precision.hpp
+	"../detail/type_vec1.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_uint1.hpp
+	"../detail/type_vec1.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\ext\vector_uint1_precision.hpp
+	"../detail/type_vec1.hpp"
+
+1554197305 c:\users\digao\onedrive\documentos\programming\c_c++\libs\glm-0.9.9.5\glm\gtc\type_ptr.inl
+	<cstring>
+

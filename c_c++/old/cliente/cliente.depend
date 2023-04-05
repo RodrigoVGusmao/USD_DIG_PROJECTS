@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1489324440 source:c:\users\digao\onedrive\documentos\c_c++\cliente\main.cpp
+	<winsock2.h>
+	<stdio.h>
+

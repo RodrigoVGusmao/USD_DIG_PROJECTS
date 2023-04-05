@@ -1,0 +1,97 @@
+package velha;
+
+public class Velha {
+	/**cada 2 bits por area do campo(00 - vazio, 01 - X, 10 - O, 11 - indefinido)**/
+	private int campo;
+	private int campoVazio;
+	
+	Velha()
+	{
+		campoVazio = 9;
+		campo = 0;
+	}
+	
+	public void limparCampo()
+	{
+		campoVazio = 9;
+		campo = 0;
+	}
+	
+	public int fazerJogada(int index, int jogador)
+	{
+		if((campo & (11 << index)) == 0)
+		{
+			if(jogador == 2 || jogador == 1)
+			{
+				campo |= jogador << index;
+				--campoVazio;
+			}
+			else
+				throw new JogadorInvalido("Jogador Inválido");
+		}
+		else
+			throw new CampoPreenchido("campo já ocupado");
+		
+		return testarEstado();
+	}
+	
+	public int RetornarCampo()
+	{
+		return campo;
+	}
+	
+	@Override
+	public String toString()
+	{
+		return Integer.toString(campo, 4);
+	}
+	
+	/*meteodos privados*/
+	
+	/**testa estado do jogo (0 - jogo em andamento, 1 - vitoria jogador 1, 2 - vitoria jogador 2, 3 - empate)**/
+	private int testarEstado()
+	{
+		//teste horizontal
+		int estadoTemp = campo;
+		for(int i = 0; i < 3; ++i)
+		{
+			int resultado = estadoTemp & 0x3F;
+			if(resultado == 0x15)
+				return 1;
+			if(resultado == 0x2A)
+				return 2;
+			estadoTemp >>= 6;
+		}
+		
+		//teste vertical
+		estadoTemp = campo;
+		for(int i = 0; i < 3; ++i)
+		{
+			int resultado = estadoTemp & 0x30C3;
+			if(resultado == 0x1041)
+				return 1;
+			if(resultado == 0x2082)
+				return 2;
+			estadoTemp >>= 2;
+		}
+		
+		//teste digaonal esquerda para direita
+		if((campo & 0x30303) == 0x10101)
+			return 1;
+		if((campo & 0x30303) == 0x20202)
+			return 2;
+		
+		//teste digaonal direita para esquerda
+		if((campo & 0x3330) == 0x1110)
+			return 1;
+		if((campo & 0x3330) == 0x2220)
+			return 2;
+		
+		//teste empate
+		if(campoVazio == 0)
+			return 3;
+		
+		//sem vitoria;
+		return 0;
+	}
+}

@@ -1,0 +1,8 @@
+package Velha;
+
+public class CampoPreenchido extends RuntimeException {
+	public CampoPreenchido(String msg)
+	{
+		super(msg);
+	}
+}

@@ -1,0 +1,5 @@
+package Velha;
+
+public class CampoPreenchido extends Exception {
+
+}

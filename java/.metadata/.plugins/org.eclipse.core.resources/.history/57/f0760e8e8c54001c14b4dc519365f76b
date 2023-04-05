@@ -1,0 +1,13 @@
+package prova2;
+
+import javax.swing.JOptionPane;
+
+public class Prova {
+
+	public static void main(String[] args) {
+		JOptionPane.showInputDialog(null, "teste");
+		Double.parseDouble(JOptionPane.showInputDialog("Base:"));
+		Double.parseDouble(JOptionPane.showInputDialog("Expoente:"));
+	}
+
+}

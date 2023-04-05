@@ -1,0 +1,28 @@
+package janelas;
+
+import org.eclipse.swt.events.MouseAdapter;
+import org.eclipse.swt.events.MouseEvent;
+import org.eclipse.swt.widgets.Label;
+
+import velha.Velha;
+
+public class MouseAdapterVelha extends MouseAdapter {
+	Velha velha;
+	int index;
+	
+	public MouseAdapterVelha(Velha velha, int index)
+	{
+		super();
+		this.velha = velha;
+		this.index = index;
+	}
+	
+	@Override
+	public void mouseUp(MouseEvent e)
+	{
+		velha.fazerJogada(index, 1);
+		
+		Label lbl = ((Label) e.getSource());
+		lbl.redraw();
+	}
+}

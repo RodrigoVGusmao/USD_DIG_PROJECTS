@@ -1,0 +1,19 @@
+package jogadores;
+
+import janelas.JanelaVelha;
+import velha.Velha;
+
+public class Usuario implements Jogador {
+	private JanelaVelha janela;
+	private int jogador;
+	
+	public Usuario(int jogador, JanelaVelha janela)
+	{
+		this.jogador = jogador;
+	}
+	
+	public void fazerJogada(Velha velha) {
+		janela.liberarJogada(jogador);
+	}
+
+}

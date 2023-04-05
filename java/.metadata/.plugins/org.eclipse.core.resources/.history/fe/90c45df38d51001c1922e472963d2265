@@ -1,0 +1,23 @@
+package janelas;
+
+import org.eclipse.swt.events.MouseAdapter;
+import org.eclipse.swt.events.MouseEvent;
+import org.eclipse.swt.graphics.Image;
+import org.eclipse.swt.graphics.ImageData;
+import org.eclipse.swt.graphics.Point;
+import org.eclipse.swt.widgets.Label;
+import org.eclipse.wb.swt.SWTResourceManager;
+
+public class MouseAdapterVelha extends MouseAdapter {
+	@Override
+	public void mouseUp(MouseEvent e)
+	{
+		Image img = SWTResourceManager.getImage(JanelaVelha.class, "/janelas/x.jpg");
+		ImageData data = img.getImageData();
+		Label lbl = ((Label) e.getSource());
+		Point pt = lbl.getSize();
+		data = data.scaledTo(pt.x, pt.y);
+		Image newImage = new Image(img.getDevice(), data);
+		lbl.setImage(newImage);
+	}
+}

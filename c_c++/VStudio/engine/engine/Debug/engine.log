@@ -1,0 +1,6 @@
+﻿  engine.cpp
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\engine\engine\mainWindow.h(272,8): warning C4267: 'argument': conversion from 'size_t' to 'uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\engine\engine\mainWindow.h(308,151): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\engine\engine\mainWindow.h(309,158): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\engine\engine\mainWindow.h(317,27): warning C4018: '<': signed/unsigned mismatch
+  engine.vcxproj -> C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\engine\Debug\engine.exe

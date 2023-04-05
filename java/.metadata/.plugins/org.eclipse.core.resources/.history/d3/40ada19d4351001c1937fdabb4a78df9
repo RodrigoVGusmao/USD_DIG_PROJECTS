@@ -1,0 +1,95 @@
+package janelas;
+
+import org.eclipse.swt.widgets.Dialog;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.layout.FormLayout;
+import org.eclipse.swt.layout.FormData;
+import org.eclipse.swt.layout.FormAttachment;
+import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.widgets.Label;
+import org.eclipse.swt.layout.GridData;
+import org.eclipse.wb.swt.SWTResourceManager;
+
+public class Velha extends Dialog {
+
+	protected Object result;
+	protected Shell shell;
+
+	/**
+	 * Create the dialog.
+	 * @param parent
+	 * @param style
+	 */
+	public Velha(Shell parent, int style) {
+		super(parent, style);
+		setText("SWT Dialog");
+	}
+
+	/**
+	 * Open the dialog.
+	 * @return the result
+	 */
+	public Object open() {
+		createContents();
+		shell.open();
+		shell.layout();
+		Display display = getParent().getDisplay();
+		while (!shell.isDisposed()) {
+			if (!display.readAndDispatch()) {
+				display.sleep();
+			}
+		}
+		return result;
+	}
+
+	/**
+	 * Create contents of the dialog.
+	 */
+	private void createContents() {
+		shell = new Shell(getParent(), SWT.DIALOG_TRIM | SWT.RESIZE);
+		shell.setSize(300, 300);
+		shell.setText(getText());
+		shell.setLayout(new GridLayout(3, false));
+		
+		Label lblCampo = new Label(shell, SWT.NONE);
+		lblCampo.setSize(100, 100);
+		lblCampo.setImage(null);
+		
+		Label lblCampo_1 = new Label(shell, SWT.NONE);
+		lblCampo_1.setSize(100, 100);
+		lblCampo_1.setImage(null);
+		
+		Label lblCampo_2 = new Label(shell, SWT.NONE);
+		lblCampo_2.setSize(100, 100);
+		lblCampo_2.setImage(null);
+		
+		Label lblCampo_3 = new Label(shell, SWT.NONE);
+		lblCampo_3.setSize(100, 100);
+		lblCampo_3.setImage(null);
+		
+		Label lblCampo_4 = new Label(shell, SWT.NONE);
+		lblCampo_4.setSize(100, 100);
+		lblCampo_4.setImage(null);
+		
+		Label lblCampo_5 = new Label(shell, SWT.NONE);
+		lblCampo_5.setSize(100, 100);
+		lblCampo_5.setImage(null);
+		
+		Label lblCampo_6 = new Label(shell, SWT.NONE);
+		lblCampo_6.setSize(100, 100);
+		lblCampo_6.setImage(null);
+		
+		Label lblCampo_7 = new Label(shell, SWT.NONE);
+		lblCampo_7.setSize(100, 100);
+		lblCampo_7.setImage(null);
+		
+		Label lblCampo_8 = new Label(shell, SWT.NONE);
+		lblCampo_8.setSize(100, 100);
+		lblCampo_8.setImage(null);
+
+	}
+}

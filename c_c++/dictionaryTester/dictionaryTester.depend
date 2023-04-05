@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1667028838 source:c:\users\digao\onedrive\documentos\programming\c_c++\dictionarytester\main.c
+	<stdlib.h>
+	<stdio.h>
+	<stdint.h>
+	<inttypes.h>
+	<string.h>
+	"include/get5Word.h"
+
+1666906972 c:\users\digao\onedrive\documentos\programming\c_c++\dictionarytester\include\get5word.h
+	<stdint.h>
+
+1667028838 source:c:\repositories\usd_dig_projects\c_c++\dictionarytester\main.c
+	<stdlib.h>
+	<stdio.h>
+	<stdint.h>
+	<inttypes.h>
+	<string.h>
+	"include/get5Word.h"
+
+1666906972 c:\repositories\usd_dig_projects\c_c++\dictionarytester\include\get5word.h
+	<stdint.h>
+

@@ -1,0 +1,40 @@
+package prova2;
+
+import java.util.function.DoublePredicate;
+
+import javax.swing.JOptionPane;
+
+public class Prova {
+
+	public static void main(String[] args) {
+		double base = entradaDouble("Base:", "Entrada inválida", (a) -> {return a >= 0 ? true : false;});
+		double exp = entradaDouble("Expoente:", "Entrada inválida", (a) -> {return a >= 0 ? true : false;});
+		
+		//double resultado = Math.pow(base, exp);
+		double resultado = potencia((int)base, (int)exp);
+		
+		JOptionPane.showMessageDialog(null, resultado);
+	}
+
+	private static int potencia(int base, int exp)
+	{
+		return 0;
+	}
+	
+	private static double entradaDouble(String txt, String erro, DoublePredicate op)
+	{
+		double ret;
+		while(true)
+		{
+			try {
+				ret = Double.parseDouble(JOptionPane.showInputDialog(txt));
+				if(op.test(ret))
+					break;
+			} catch(NumberFormatException e)
+			{
+				JOptionPane.showMessageDialog(null, erro);
+			}
+		}
+		return ret;
+	}
+}

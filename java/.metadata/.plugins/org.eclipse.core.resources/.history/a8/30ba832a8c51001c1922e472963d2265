@@ -1,0 +1,244 @@
+package janelas;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Label;
+import org.eclipse.wb.swt.SWTResourceManager;
+
+import bancoDeDados.Banco;
+
+import org.eclipse.swt.widgets.Group;
+import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.events.SelectionAdapter;
+import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.layout.FormLayout;
+import org.eclipse.swt.layout.FormData;
+import org.eclipse.swt.layout.FormAttachment;
+
+public class MainWindow extends Shell {
+	private static JanelaLogin login;
+	private static JanelaVelha velha;
+	private static Label lblNotLoggedIn;
+	private static Label lblNa;
+	private static Label lblNa_1;
+	private static Label lblNa_2;
+	private static Label lblNa_3;
+	private static Connection userCon;
+	
+	/**
+	 * Launch the application.
+	 * @param args
+	 */
+	public static void main(String args[]) {
+		try {
+			Display display = Display.getDefault();
+			JanelaMain shell = new JanelaMain(display);
+			
+			login = new JanelaLogin(shell, 0);
+			velha = new JanelaVelha(shell, 0);
+			userCon = (Connection) login.open();
+			
+			Banco banco;
+			try {
+				 banco = Banco.criarBanco();
+			} catch(SQLException e)
+			{
+				return;
+			}
+			
+			if(userCon != null)
+			{
+				lblNotLoggedIn.setText(banco.retornarNomeUsuario());
+				lblNotLoggedIn.setForeground(SWTResourceManager.getColor(SWT.COLOR_GREEN));
+				lblNa.setText(banco.retornarPrecisao() + "");
+				lblNa_1.setText(banco.retornarPartidas() + "");
+				lblNa_2.setText(banco.retornarPartidasGanhas() + "");
+				lblNa_3.setText(banco.retornarPartidasPerdidas() + "");
+			}
+			
+			shell.open();
+			shell.layout();
+			while (!shell.isDisposed()) {
+				if (!display.readAndDispatch()) {
+					display.sleep();
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * Create the shell.
+	 * @param display
+	 */
+	public MainWindow(Display display) {
+		super(display, SWT.CLOSE | SWT.MIN | SWT.MAX | SWT.TITLE);
+		setLayout(new FormLayout());
+		
+		Label lblUsurio = new Label(this, SWT.NONE);
+		FormData fd_lblUsurio = new FormData();
+		fd_lblUsurio.top = new FormAttachment(0, 3);
+		fd_lblUsurio.left = new FormAttachment(0, 3);
+		lblUsurio.setLayoutData(fd_lblUsurio);
+		lblUsurio.setText("Usu\u00E1rio:");
+		
+		lblNotLoggedIn = new Label(this, SWT.NONE);
+		FormData fd_lblNotLoggedIn = new FormData();
+		fd_lblNotLoggedIn.right = new FormAttachment(0, 274);
+		fd_lblNotLoggedIn.top = new FormAttachment(0, 3);
+		fd_lblNotLoggedIn.left = new FormAttachment(0, 52);
+		lblNotLoggedIn.setLayoutData(fd_lblNotLoggedIn);
+		lblNotLoggedIn.setForeground(SWTResourceManager.getColor(SWT.COLOR_RED));
+		lblNotLoggedIn.setText("not logged in");
+		
+		Group grpDados = new Group(this, SWT.NONE);
+		FormData fd_grpDados = new FormData();
+		fd_grpDados.bottom = new FormAttachment(0, 251);
+		fd_grpDados.right = new FormAttachment(0, 424);
+		fd_grpDados.top = new FormAttachment(0, 3);
+		fd_grpDados.left = new FormAttachment(0, 280);
+		grpDados.setLayoutData(fd_grpDados);
+		grpDados.setText("dados");
+		grpDados.setToolTipText("");
+		grpDados.setLayout(new GridLayout(3, false));
+		
+		Label lblPreciso = new Label(grpDados, SWT.NONE);
+		lblPreciso.setText("Precis\u00E3o");
+		new Label(grpDados, SWT.NONE);
+		
+		lblNa = new Label(grpDados, SWT.NONE);
+		lblNa.setText("n/a");
+		
+		Label lblJogos = new Label(grpDados, SWT.NONE);
+		lblJogos.setText("Jogos");
+		new Label(grpDados, SWT.NONE);
+		
+		lblNa_1 = new Label(grpDados, SWT.NONE);
+		lblNa_1.setText("n/a");
+		
+		Label lblJogosGanhos = new Label(grpDados, SWT.NONE);
+		lblJogosGanhos.setText("Jogos ganhos");
+		new Label(grpDados, SWT.NONE);
+		
+		lblNa_2 = new Label(grpDados, SWT.NONE);
+		lblNa_2.setText("n/a");
+		
+		Label lblJogosPerdidos = new Label(grpDados, SWT.NONE);
+		lblJogosPerdidos.setText("Jogos perdidos");
+		new Label(grpDados, SWT.NONE);
+		
+		lblNa_3 = new Label(grpDados, SWT.NONE);
+		lblNa_3.setText("n/a");
+		
+		Button btnNovoJogo = new Button(this, SWT.NONE);
+		btnNovoJogo.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				velha.open();
+			}
+		});
+		FormData fd_btnNovoJogo = new FormData();
+		fd_btnNovoJogo.right = new FormAttachment(0, 274);
+		fd_btnNovoJogo.top = new FormAttachment(0, 226);
+		fd_btnNovoJogo.left = new FormAttachment(0, 199);
+		btnNovoJogo.setLayoutData(fd_btnNovoJogo);
+		btnNovoJogo.setText("Novo Jogo...");
+		
+		Button btnSair = new Button(this, SWT.NONE);
+		FormData fd_btnSair = new FormData();
+		fd_btnSair.right = new FormAttachment(0, 274);
+		fd_btnSair.top = new FormAttachment(0, 24);
+		fd_btnSair.left = new FormAttachment(0, 199);
+		btnSair.setLayoutData(fd_btnSair);
+		btnSair.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				lblNotLoggedIn.setForeground(SWTResourceManager.getColor(SWT.COLOR_RED));
+				lblNotLoggedIn.setText("not logged in");
+				lblNa.setText("n/a");
+				lblNa_1.setText("n/a");
+				lblNa_2.setText("n/a");
+				lblNa_3.setText("n/a");
+				try {
+					if(userCon != null)
+						Banco.endUserConnection(userCon);
+				} catch (SQLException e1) {
+					// TODO Auto-generated catch block
+				}
+			}
+		});
+		btnSair.setText("Sair");
+		
+		Button btnTrocarUsuario = new Button(this, SWT.NONE);
+		FormData fd_btnTrocarUsuario = new FormData();
+		fd_btnTrocarUsuario.top = new FormAttachment(0, 24);
+		fd_btnTrocarUsuario.left = new FormAttachment(0, 13);
+		btnTrocarUsuario.setLayoutData(fd_btnTrocarUsuario);
+		btnTrocarUsuario.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				Connection User = (Connection) login.open();
+				try {
+					if(User != null)
+					{
+						Banco banco = Banco.criarBanco();
+						lblNotLoggedIn.setText(banco.retornarNomeUsuario());
+						lblNotLoggedIn.setForeground(SWTResourceManager.getColor(SWT.COLOR_GREEN));
+						lblNa.setText(banco.retornarPrecisao() + "");
+						lblNa_1.setText(banco.retornarPartidas() + "");
+						lblNa_2.setText(banco.retornarPartidasGanhas() + "");
+						lblNa_3.setText(banco.retornarPartidasPerdidas() + "");
+					}
+				} catch(SQLException e1)
+				{
+					
+				}
+			}
+		});
+		btnTrocarUsuario.setText("Trocar Usuario...");
+		
+		Button btnFechar = new Button(this, SWT.NONE);
+		FormData fd_btnFechar = new FormData();
+		fd_btnFechar.right = new FormAttachment(0, 88);
+		fd_btnFechar.top = new FormAttachment(0, 226);
+		fd_btnFechar.left = new FormAttachment(0, 13);
+		btnFechar.setLayoutData(fd_btnFechar);
+		btnFechar.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				close();
+			}
+		});
+		btnFechar.setText("Fechar");
+		
+		Composite composite = new Composite(this, SWT.NONE);
+		FormData fd_composite = new FormData();
+		fd_composite.bottom = new FormAttachment(0, 220);
+		fd_composite.right = new FormAttachment(0, 274);
+		fd_composite.top = new FormAttachment(0, 55);
+		fd_composite.left = new FormAttachment(0, 10);
+		composite.setLayoutData(fd_composite);
+		createContents();
+	}
+
+	/**
+	 * Create contents of the shell.
+	 */
+	protected void createContents() {
+		setText("SWT Application");
+		setSize(450, 300);
+
+	}
+
+	@Override
+	protected void checkSubclass() {
+		// Disable the check that prevents subclassing of SWT components
+	}
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.wb.internal.rcp.databinding.DatabindingsProvider">
+		<item key="TargetColumn" value="250"/>
+		<item key="ModelColumn" value="250"/>
+		<item key="TargetStrategyColumn" value="170"/>
+		<item key="ModelStrategyColumn" value="170"/>
+		<item key="VariableBindingColumn" value="250"/>
+		<item key="Main_Sash.x" value="1"/>
+		<item key="Main_Sash.y" value="3"/>
+		<item key="Observes_Sash.x" value="1"/>
+		<item key="Observes_Sash.y" value="1"/>
+	</section>
+</section>

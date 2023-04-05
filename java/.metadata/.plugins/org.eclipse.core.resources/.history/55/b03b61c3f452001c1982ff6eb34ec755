@@ -1,0 +1,35 @@
+package jogadores;
+
+import velha.Velha;
+
+public class RecordedPlayer implements Jogador {
+
+	private int jogador;
+	private String[] jogo;
+	
+	RecordedPlayer(String[] jogo, int jogador)
+	{
+		this.jogador = jogador;
+		this.jogo = jogo;
+	}
+	
+	@Override
+	public int loop(Velha velha) {
+		// TODO Auto-generated method stub
+		velha.turno();
+		return fazerJogada(velha, 0);
+	}
+
+	@Override
+	public int fazerJogada(Velha velha, int index) {
+		// TODO Auto-generated method stub
+		return velha.fazerJogada(index, jogador);
+	}
+
+	@Override
+	public void reiniciar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,160 @@
+package janelas;
+
+import org.eclipse.swt.widgets.Dialog;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+
+import javax.swing.JOptionPane;
+
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.MouseAdapter;
+import org.eclipse.swt.events.MouseEvent;
+import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.widgets.Label;
+import org.eclipse.wb.swt.SWTResourceManager;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.graphics.Point;
+
+public class Velha extends Dialog {
+
+	protected Object result;
+	protected Shell shell;
+
+	/**
+	 * Create the dialog.
+	 * @param parent
+	 * @param style
+	 */
+	public Velha(Shell parent, int style) {
+		super(parent, style);
+		setText("SWT Dialog");
+	}
+
+	/**
+	 * Open the dialog.
+	 * @return the result
+	 */
+	public Object open() {
+		createContents();
+		shell.open();
+		shell.layout();
+		Display display = getParent().getDisplay();
+		while (!shell.isDisposed()) {
+			if (!display.readAndDispatch()) {
+				display.sleep();
+			}
+		}
+		return result;
+	}
+
+	/**
+	 * Create contents of the dialog.
+	 */
+	private void createContents() {
+		shell = new Shell(getParent(), SWT.DIALOG_TRIM | SWT.RESIZE);
+		shell.setMinimumSize(new Point(100, 100));
+		shell.setSize(300, 300);
+		shell.setText(getText());
+		shell.setLayout(new GridLayout(3, true));
+		
+		Label lblCampo = new Label(shell, SWT.NONE);
+		lblCampo.setImage(SWTResourceManager.getImage("C:\\Users\\digao\\Downloads\\x.png"));
+		lblCampo.setSize(300, 300);
+		lblCampo.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseUp(MouseEvent e)
+			{
+				
+			}
+		});
+		
+		Label lblCampo_1 = new Label(shell, SWT.NONE);
+		lblCampo_1.setSize(100, 100);
+		lblCampo_1.setImage(null);
+		lblCampo_1.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseUp(MouseEvent e)
+			{
+				
+			}
+		});
+		
+		Label lblCampo_2 = new Label(shell, SWT.NONE);
+		lblCampo_2.setSize(100, 100);
+		lblCampo_2.setImage(null);
+		lblCampo_2.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseUp(MouseEvent e)
+			{
+				
+			}
+		});
+		
+		Label lblCampo_3 = new Label(shell, SWT.NONE);
+		lblCampo_3.setSize(100, 100);
+		lblCampo_3.setImage(null);
+		lblCampo_3.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseUp(MouseEvent e)
+			{
+				
+			}
+		});
+		
+		Label lblCampo_4 = new Label(shell, SWT.NONE);
+		lblCampo_4.setSize(100, 100);
+		lblCampo_4.setImage(null);
+		lblCampo_4.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseUp(MouseEvent e)
+			{
+				
+			}
+		});
+		
+		Label lblCampo_5 = new Label(shell, SWT.NONE);
+		lblCampo_5.setSize(100, 100);
+		lblCampo_5.setImage(null);
+		lblCampo_5.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseUp(MouseEvent e)
+			{
+				
+			}
+		});
+		
+		Label lblCampo_6 = new Label(shell, SWT.NONE);
+		lblCampo_6.setSize(100, 100);
+		lblCampo_6.setImage(null);
+		lblCampo_6.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseUp(MouseEvent e)
+			{
+				
+			}
+		});
+		
+		Label lblCampo_7 = new Label(shell, SWT.NONE);
+		lblCampo_7.setSize(100, 100);
+		lblCampo_7.setImage(null);
+		lblCampo_7.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseUp(MouseEvent e)
+			{
+				
+			}
+		});
+		
+		Label lblCampo_8 = new Label(shell, SWT.NONE);
+		lblCampo_8.setSize(100, 100);
+		lblCampo_8.setImage(null);
+		lblCampo_8.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseUp(MouseEvent e)
+			{
+				
+			}
+		});
+
+	}
+}

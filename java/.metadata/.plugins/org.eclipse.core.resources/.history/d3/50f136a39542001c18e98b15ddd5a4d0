@@ -1,0 +1,5 @@
+package Velha;
+
+interface Jogador {
+	public int fazerJogada(Velha velha, int jogador);
+}

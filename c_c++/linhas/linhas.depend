@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1662350437 source:c:\users\digao\onedrive\documentos\programming\c_c++\linhas\linhas.c
+	<stdio.h>
+	<stdint.h>
+	<math.h>
+	"pixel.h"
+	"customIO.h"
+
+1662489814 c:\users\digao\onedrive\documentos\programming\c_c++\linhas\pixel.h
+	<windows.h>
+	<stdint.h>
+
+1662359756 source:c:\users\digao\onedrive\documentos\programming\c_c++\linhas\pixel.c
+	"pixel.h"
+	<stdio.h>
+
+1662349061 source:c:\users\digao\onedrive\documentos\programming\c_c++\linhas\customio.c
+	"customIO.h"
+	<stdio.h>
+	<stdint.h>
+
+1662347744 c:\users\digao\onedrive\documentos\programming\c_c++\linhas\customio.h
+
+1662359657 source:c:\users\digao\onedrive\documentos\programming\c_c++\linhas\pixel_g.c
+	"pixel.h"
+	<stdio.h>
+

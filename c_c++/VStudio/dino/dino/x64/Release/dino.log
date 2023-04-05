@@ -1,0 +1,12 @@
+﻿  2DSide.cpp
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\dino\dino\2DSide.h(10,9): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  extFiles.cpp
+  The contents of <variant> are available only with C++17 or later.
+  FPSHand.cpp
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\dino\dino\FPSHand.cpp(3,9): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  main.cpp
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\dino\dino\main.cpp(8,9): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  TextureHand.cpp
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\dino\dino\TextureHand.h(7,9): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  windowHand.cpp
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\dino\dino\WindowHand.h(8,9): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory

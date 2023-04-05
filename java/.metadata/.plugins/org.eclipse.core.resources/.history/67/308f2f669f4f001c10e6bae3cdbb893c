@@ -1,0 +1,132 @@
+package projetoJava;
+
+import java.sql.*;
+
+import javax.swing.JOptionPane;
+
+public final class Banco {
+	private static Banco instance;
+	private String hostName = "jdbc:mysql://localhost:3306/";
+	private String banco = "bd_java_velha";
+	private String adminUser = "root";
+	private String psswd = "pssw";
+	
+	public static Banco criarBanco() throws SQLException
+	{
+		if(instance == null)
+		{
+			instance = new Banco();
+		}
+		return instance;
+	}
+	
+	private Banco() throws SQLException
+	{
+		Connection adminCon = null;
+		
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			JOptionPane.showMessageDialog(null, "Não foi possivel carregar driver!", "erro", JOptionPane.OK_OPTION);
+		}
+		
+		while(true)
+		{
+			try {
+				adminCon = createAdminConnection();
+				break;
+			} catch(SQLException e)
+			{
+				int result = JOptionPane.showConfirmDialog(null, "Não foi possivel conectar ao banco de dados!" +
+						" Deseja tentar novamente?" + "\nerror: " + e.getMessage(),
+						"erro", JOptionPane.YES_NO_OPTION);
+				if(result == JOptionPane.NO_OPTION)
+				{
+					throw e;
+				}
+			}
+		}
+		
+		tentarComando(adminCon, "CREATE DATABASE IF NOT EXISTS " + banco, "Não foi possivel criar banco de dados!", 3);
+		tentarComando(adminCon, "USE " + banco, "Não foi possivel usar banco de dados!", 3);
+		tentarComando(adminCon, "CREATE TABLE IF NOT EXISTS user_info (userId INT PRIMARY KEY, user VARCHAR(50), gamePrecision FLOAT, games INT,"
+				+ "wins INT, loses INT)", "Não foi possivel criar tabela 'user' no banco de dados!", 3);
+		tentarComando(adminCon, "CREATE TABLE IF NOT EXISTS game_history (gameId INT PRIMARY KEY, userId INT, game JSON)",
+				"Não foi possivel criar tabela 'game' no banco de dados!", 3);
+		tentarComando(adminCon, "CREATE ROLE IF NOT EXISTS user", "Não foi possivel criar função 'user' no banco de dados!", 3);
+		
+		adminCon.close();
+	}
+	
+	public void criarUsuario(String user, String psswd) throws SQLException
+	{
+		Connection adminCon = createAdminConnection();
+		tentarComando(adminCon, "CREATE USER \"" + user + "\" IDENTIFIED BY \"" + psswd + "\" DEFAULT ROLE user",
+				"Não foi possivel criar banco de dados!", 3);
+		tentarComando(adminCon, "INSERT INTO user_info (user VARCHAR(50), gamePrecision FLOAT, games INT, wins INT, loses INT) "
+				+ "VALUES ("+ user +", 0.0, 0, 0, 0)", "Não foi possivel alterar tabela", 3);
+		adminCon.close();
+	}
+	
+	public Connection createAdminConnection() throws SQLException
+	{
+		return DriverManager.getConnection(hostName, adminUser, psswd);
+	}
+	
+	public Connection createUserConnection(String username, String psswd) throws SQLException
+	{
+		return DriverManager.getConnection(hostName, username, psswd);
+	}
+	
+	@SuppressWarnings("unused")
+	private void tentarComando(Connection conn, String comando, String mensagemErro) throws SQLException
+	{
+		while(true)
+		{
+			try {
+				PreparedStatement ps = conn.prepareStatement(comando);
+				ps.execute();
+				break;
+			} catch(SQLException e)
+			{
+				int result = JOptionPane.showConfirmDialog(null, mensagemErro +
+			"\nDeseja tentar novamente?" + "\nerror: " + e.getMessage(),
+			"erro", JOptionPane.YES_NO_OPTION);
+				if(result == JOptionPane.NO_OPTION)
+				{
+					conn.close();
+					throw e;
+				}
+			}
+		}
+	}
+	
+	@SuppressWarnings("unused")
+	private void tentarComando(Connection conn, String comando, String mensagemErro, int maximoTentativas) throws SQLException
+	{
+		for(int i = 0; true; ++i)
+		{
+			try {
+				PreparedStatement ps = conn.prepareStatement(comando);
+				ps.execute();
+				break;
+			} catch(SQLException e)
+			{
+				if(i >= maximoTentativas)
+				{
+					conn.close();
+					throw e;
+				}
+				int result = JOptionPane.showConfirmDialog(null, mensagemErro +
+						"\nDeseja tentar novamente?" + "\nerror: " + e.getMessage(),
+						"erro", JOptionPane.YES_NO_OPTION);
+				if(result == JOptionPane.NO_OPTION)
+				{
+					conn.close();
+					throw e;
+				}
+			}
+		}
+	}
+}

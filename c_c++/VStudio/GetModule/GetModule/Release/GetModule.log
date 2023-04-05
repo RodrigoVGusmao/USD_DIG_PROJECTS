@@ -1,0 +1,2 @@
+﻿  GetModule.cpp
+LINK : fatal error LNK1104: cannot open file 'C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\GetModule\Release\GetModule.exe'

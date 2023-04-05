@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1669673344 source:c:\users\digao\onedrive\documentos\programming\c_c++\calccpp\main.cpp
+	<iostream>
+	<math.h>
+

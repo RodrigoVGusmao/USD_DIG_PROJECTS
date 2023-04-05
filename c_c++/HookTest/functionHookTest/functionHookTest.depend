@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1644176022 source:c:\users\digao\onedrive\documentos\programming\c_c++\functionhooktest\main.cpp
+	<tchar.h>
+	<windows.h>
+
+1644218407 source:c:\repositories\usd_dig_projects\c_c++\functionhooktest\main.cpp
+	<tchar.h>
+	<windows.h>
+

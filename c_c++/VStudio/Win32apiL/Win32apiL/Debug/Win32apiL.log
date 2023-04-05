@@ -1,0 +1,25 @@
+﻿  Win32apiL.cpp
+C:\Users\digao\OneDrive\Documentos\c_c++\VStudio\Win32apiL\Win32apiL\DrawArea.h(60,76): warning C4244: 'argument': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=uint64_t
+          ]
+C:\Users\digao\OneDrive\Documentos\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(19,43): warning C4244: 'initializing': conversion from 'LONG' to 'uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(19,28): warning C4244: 'initializing': conversion from 'LONG' to 'const uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(20,45): warning C4244: 'initializing': conversion from 'LONG' to 'uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(20,29): warning C4244: 'initializing': conversion from 'LONG' to 'const uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(63,43): warning C4244: 'initializing': conversion from 'LONG' to 'uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(63,28): warning C4244: 'initializing': conversion from 'LONG' to 'const uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(64,45): warning C4244: 'initializing': conversion from 'LONG' to 'uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(64,29): warning C4244: 'initializing': conversion from 'LONG' to 'const uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(90,15): warning C4244: 'initializing': conversion from 'LONG' to 'uint8_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(95,22): warning C4244: '=': conversion from 'WORD' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=uint8_t
+          ]
+C:\Users\digao\OneDrive\Documentos\c_c++\VStudio\Win32apiL\Win32apiL\MainWindow.h(18,43): warning C4244: 'initializing': conversion from 'LONG' to 'uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\c_c++\VStudio\Win32apiL\Win32apiL\MainWindow.h(18,28): warning C4244: 'initializing': conversion from 'LONG' to 'const uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\c_c++\VStudio\Win32apiL\Win32apiL\MainWindow.h(19,45): warning C4244: 'initializing': conversion from 'LONG' to 'uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\c_c++\VStudio\Win32apiL\Win32apiL\MainWindow.h(19,29): warning C4244: 'initializing': conversion from 'LONG' to 'const uint16_t', possible loss of data
+  Win32apiL.vcxproj -> C:\Users\digao\OneDrive\Documentos\c_c++\VStudio\Win32apiL\Debug\Win32apiL.exe

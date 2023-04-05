@@ -1,0 +1,74 @@
+package janelas;
+
+import org.eclipse.swt.widgets.Dialog;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Label;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.events.SelectionAdapter;
+import org.eclipse.swt.events.SelectionEvent;
+
+public class JanelaNovoJogo extends Dialog {
+
+	protected Object result;
+	protected Shell shell;
+
+	/**
+	 * Create the dialog.
+	 * @param parent
+	 * @param style
+	 */
+	public JanelaNovoJogo(Shell parent, int style) {
+		super(parent, style);
+		setText("SWT Dialog");
+	}
+
+	/**
+	 * Open the dialog.
+	 * @return the result
+	 */
+	public Object open() {
+		createContents();
+		shell.open();
+		shell.layout();
+		Display display = getParent().getDisplay();
+		while (!shell.isDisposed()) {
+			if (!display.readAndDispatch()) {
+				display.sleep();
+			}
+		}
+		return result;
+	}
+
+	/**
+	 * Create contents of the dialog.
+	 */
+	private void createContents() {
+		shell = new Shell(getParent(), getStyle());
+		shell.setSize(450, 300);
+		shell.setText(getText());
+		
+		Label lblNmeroDeJogadores = new Label(shell, SWT.NONE);
+		lblNmeroDeJogadores.setBounds(10, 10, 115, 15);
+		lblNmeroDeJogadores.setText("N\u00FAmero de jogadores");
+		
+		Button button = new Button(shell, SWT.RADIO);
+		button.setBounds(10, 31, 90, 16);
+		button.setText("0");
+		
+		Button button_1 = new Button(shell, SWT.RADIO);
+		button_1.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+			}
+		});
+		button_1.setText("1");
+		button_1.setBounds(10, 53, 90, 16);
+		
+		Button button_2 = new Button(shell, SWT.RADIO);
+		button_2.setText("2");
+		button_2.setBounds(10, 75, 90, 16);
+
+	}
+}

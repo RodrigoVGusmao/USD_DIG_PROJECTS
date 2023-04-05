@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1643214748 source:c:\users\digao\onedrive\documentos\programming\c_c++\dllinjectiontest\main.cpp
+	<tchar.h>
+	<windows.h>
+	<inttypes.h>
+	<stdio.h>
+
+1643214748 source:c:\repositories\usd_dig_projects\c_c++\dllinjectiontest\main.cpp
+	<tchar.h>
+	<windows.h>
+	<inttypes.h>
+	<stdio.h>
+

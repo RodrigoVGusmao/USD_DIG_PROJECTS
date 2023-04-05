@@ -1,0 +1,6 @@
+﻿  game.cpp
+  graphics.cpp
+  main.cpp
+  mainWindow.cpp
+  Generating Code...
+LINK : fatal error LNK1104: cannot open file 'd3dx9.lib'

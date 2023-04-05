@@ -1,0 +1,5 @@
+﻿  pch.cpp
+  dllmain.cpp
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\TDung\TDung\dllmain.cpp(49,94): warning C4838: conversion from 'int' to 'WORD' requires a narrowing conversion
+     Creating library C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\TheDungeon\x64\Debug\TDung.lib and object C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\TheDungeon\x64\Debug\TDung.exp
+  TDung.vcxproj -> C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\TheDungeon\x64\Debug\TDung.dll

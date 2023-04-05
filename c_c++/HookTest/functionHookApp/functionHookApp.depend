@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1652464226 source:c:\users\digao\onedrive\documentos\programming\c_c++\functionhookapp\main.cpp
+	<windows.h>
+	<tlhelp32.h>
+	<stdio.h>
+	<stdint.h>
+	"resource.h"
+
+1584205424 c:\users\digao\onedrive\documentos\programming\c_c++\functionhookapp\resource.h
+
+1645634130 source:c:\users\digao\onedrive\documentos\programming\c_c++\functionhookapp\resource.rc
+	<windows.h>
+	<commctrl.h>
+	<richedit.h>
+	"resource.h"
+
+1645634130 source:c:\repositories\usd_dig_projects\c_c++\hooktest\functionhookapp\resource.rc
+	<windows.h>
+	<commctrl.h>
+	<richedit.h>
+	"resource.h"
+
+1584205424 c:\repositories\usd_dig_projects\c_c++\hooktest\functionhookapp\resource.h
+

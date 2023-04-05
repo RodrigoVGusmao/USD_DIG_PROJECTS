@@ -1,0 +1,53 @@
+package janelas;
+
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.SWT;
+
+public class JanelaNovaSenha extends JanelaCadastro {
+
+	protected Object result;
+	protected Shell shell;
+
+	/**
+	 * Create the dialog.
+	 * @param parent
+	 * @param style
+	 */
+	public JanelaNovaSenha(Shell parent, int style) {
+		super(parent, style);
+		setText("SWT Dialog");
+	}
+
+	/**
+	 * Open the dialog.
+	 * @return the result
+	 */
+	public Object open() {
+		createContents();
+		shell.open();
+		shell.layout();
+		Display display = getParent().getDisplay();
+		while (!shell.isDisposed()) {
+			if (!display.readAndDispatch()) {
+				display.sleep();
+			}
+		}
+		return result;
+	}
+
+	/**
+	 * Create contents of the dialog.
+	 */
+	@Override
+	protected void createContents() {
+		/*shell = new Shell(getParent(), SWT.DIALOG_TRIM | SWT.APPLICATION_MODAL);
+		shell.setSize(450, 300);
+		shell.setText(getText());*/
+		super.createContents();
+		shell = shlCadastro;
+		
+		lblLogin.dispose();
+	}
+
+}

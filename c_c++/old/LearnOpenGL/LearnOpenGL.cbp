@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="LearnOpenGL" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/LearnOpenGL" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="D:/libs/SDL2-2.0.5/i686-w64-mingw32/include/SDL2" />
+				</Compiler>
+				<Linker>
+					<Add option="-lmingw32 -lSDL2main -lSDL2" />
+					<Add directory="D:/libs/SDL2-2.0.5/i686-w64-mingw32/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/LearnOpenGL" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="$(#SDL2.include)/SDL2" />
+			<Add directory="$(#glew.include)/GL" />
+			<Add directory="$(#glm)" />
+			<Add directory="$(#sdl_image.include)/SDL2" />
+			<Add directory="$(#sdl_ttf.include)/SDL2" />
+		</Compiler>
+		<Linker>
+			<Add option="-lglew32s -lglew32 -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="gdi32" />
+			<Add directory="$(#SDL2.lib)" />
+			<Add directory="$(#glew.lib)/Release/Win32" />
+			<Add directory="$(#sdl_image.lib)" />
+			<Add directory="$(#sdl_ttf.lib)" />
+		</Linker>
+		<Unit filename="main.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

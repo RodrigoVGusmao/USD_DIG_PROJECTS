@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1644171437 source:c:\users\digao\onedrive\documentos\programming\c_c++\endpainthook\main.cpp
+	"main.h"
+
+1644128136 c:\users\digao\onedrive\documentos\programming\c_c++\endpainthook\main.h
+	<windows.h>
+	<inttypes.h>
+	<stdio.h>
+

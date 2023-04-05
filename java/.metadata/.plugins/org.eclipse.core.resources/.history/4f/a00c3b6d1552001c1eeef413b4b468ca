@@ -1,0 +1,19 @@
+package jogadores;
+
+import velha.Velha;
+
+public class Usuario implements Jogador {
+	private int jogador;
+	
+	public Usuario(int jogador)
+	{
+		this.jogador = jogador;
+	}
+	
+	public int fazerJogada(Velha velha, int index) {
+		while(velha.turno() != jogador)
+			return 0;
+		return velha.fazerJogada(index, jogador);
+	}
+
+}

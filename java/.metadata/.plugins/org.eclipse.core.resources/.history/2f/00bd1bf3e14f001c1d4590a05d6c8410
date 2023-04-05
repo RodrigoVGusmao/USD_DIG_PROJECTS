@@ -1,0 +1,153 @@
+package projetoJava;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import javax.swing.JOptionPane;
+
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Label;
+import org.eclipse.wb.swt.SWTResourceManager;
+import org.eclipse.swt.widgets.Group;
+import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.events.SelectionAdapter;
+import org.eclipse.swt.events.SelectionEvent;
+
+public class MainWindow extends Shell {
+	private static Login login;
+	private static Label lblNotLoggedIn;
+	private static Connection userCon;
+	
+	/**
+	 * Launch the application.
+	 * @param args
+	 */
+	public static void main(String args[]) {
+		try {
+			Display display = Display.getDefault();
+			MainWindow shell = new MainWindow(display);
+			
+			login = new Login(shell, 0);
+			userCon = (Connection) login.open();
+			
+			Banco banco;
+			try {
+				 banco = Banco.criarBanco();
+			} catch(SQLException e)
+			{
+				return;
+			}
+			
+			try {
+				lblNotLoggedIn.setText(banco.getUser());
+				lblNotLoggedIn.setForeground(SWTResourceManager.getColor(SWT.COLOR_GREEN));
+			}catch(SQLException e)
+			{
+				/*JOptionPane.showMessageDialog(null, "Erro ao completar login!" + "\nErro: " + e.getMessage(),
+						"erro", JOptionPane.OK_OPTION);*/
+			}
+			
+			shell.open();
+			shell.layout();
+			while (!shell.isDisposed()) {
+				if (!display.readAndDispatch()) {
+					display.sleep();
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * Create the shell.
+	 * @param display
+	 */
+	public MainWindow(Display display) {
+		super(display, SWT.SHELL_TRIM);
+		setLayout(null);
+		
+		Label lblUsurio = new Label(this, SWT.NONE);
+		lblUsurio.setBounds(3, 3, 43, 15);
+		lblUsurio.setText("Usu\u00E1rio:");
+		
+		lblNotLoggedIn = new Label(this, SWT.NONE);
+		lblNotLoggedIn.setBounds(52, 3, 222, 15);
+		lblNotLoggedIn.setForeground(SWTResourceManager.getColor(SWT.COLOR_RED));
+		lblNotLoggedIn.setText("not logged in");
+		
+		Group grpDados = new Group(this, SWT.NONE);
+		grpDados.setBounds(280, 3, 144, 248);
+		grpDados.setText("dados");
+		grpDados.setToolTipText("");
+		grpDados.setLayout(new GridLayout(1, false));
+		
+		Button btnNovoJogo = new Button(this, SWT.NONE);
+		btnNovoJogo.setBounds(199, 226, 75, 25);
+		btnNovoJogo.setText("Novo Jogo...");
+		
+		Button btnSair = new Button(this, SWT.NONE);
+		btnSair.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				lblNotLoggedIn.setForeground(SWTResourceManager.getColor(SWT.COLOR_RED));
+				lblNotLoggedIn.setText("not logged in");
+				try {
+					if(userCon != null)
+						userCon.close();
+				} catch (SQLException e1) {
+					// TODO Auto-generated catch block
+				}
+			}
+		});
+		btnSair.setBounds(199, 24, 75, 25);
+		btnSair.setText("Sair");
+		
+		Button btnTrocarUsuario = new Button(this, SWT.NONE);
+		btnTrocarUsuario.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				login.open();
+				try {
+					Banco banco = Banco.criarBanco();
+					lblNotLoggedIn.setText(banco.getUser());
+				} catch(SQLException e1)
+				{
+					
+				}
+				lblNotLoggedIn.setForeground(SWTResourceManager.getColor(SWT.COLOR_GREEN));
+			}
+		});
+		btnTrocarUsuario.setBounds(13, 24, 96, 25);
+		btnTrocarUsuario.setText("Trocar Usuario...");
+		
+		Button btnFechar = new Button(this, SWT.NONE);
+		btnFechar.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				close();
+			}
+		});
+		btnFechar.setBounds(13, 226, 75, 25);
+		btnFechar.setText("Fechar");
+		createContents();
+	}
+
+	/**
+	 * Create contents of the shell.
+	 */
+	protected void createContents() {
+		setText("SWT Application");
+		setSize(450, 300);
+
+	}
+
+	@Override
+	protected void checkSubclass() {
+		// Disable the check that prevents subclassing of SWT components
+	}
+}

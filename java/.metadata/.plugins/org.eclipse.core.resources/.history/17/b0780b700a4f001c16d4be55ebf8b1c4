@@ -1,0 +1,79 @@
+package projetoJava;
+
+import java.sql.*;
+
+import javax.swing.JOptionPane;
+
+public final class Banco {
+	private static Banco instance;
+	private static String hostName = "jdbc:mysql://localhost/";
+	private static String banco = "bd_java_velha";
+	private static String adminUser = "admin";
+	private static String psswd = "psswd";
+	
+	public static Banco criarBanco() throws SQLException
+	{
+		if(instance == null)
+		{
+			instance = new Banco();
+		}
+		return instance;
+	}
+	
+	private Banco() throws SQLException
+	{
+		Connection adminCon = null;
+		
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (ClassNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+		while(true)
+		{
+			try {
+				adminCon = createAdminConnection();
+				break;
+			} catch(SQLException e)
+			{
+				int result = JOptionPane.showConfirmDialog(null, "Não foi possivel conectar ao banco de dados!" +
+						" Deseja tentar novamente?" + "\nerror: " + e.getMessage(),
+						"erro", JOptionPane.YES_NO_OPTION);
+				if(result == JOptionPane.NO_OPTION)
+				{
+					throw e;
+				}
+			}
+		}
+		
+		while(true)
+		{
+			try {
+				PreparedStatement ps = adminCon.prepareStatement("CREATE DATABASE IF NOT EXISTS bd_java_velha");
+				ps.executeQuery();
+				break;
+			} catch(SQLException e)
+			{
+				int result = JOptionPane.showConfirmDialog(null, "Não foi possivel criar banco de dados! Deseja tentar novamente?",
+						"erro", JOptionPane.YES_NO_OPTION);
+				if(result == JOptionPane.NO_OPTION)
+				{
+					adminCon.close();
+					throw e;
+				}
+			}
+		}
+	}
+	
+	public static Connection createAdminConnection() throws SQLException
+	{
+		return DriverManager.getConnection(hostName, adminUser, psswd);
+	}
+	
+	public Connection createUserConnection(String username, String psswd) throws SQLException
+	{
+		return DriverManager.getConnection(hostName, username, psswd);
+	}
+}

@@ -1,0 +1,37 @@
+package janelas;
+
+import org.eclipse.swt.events.MouseAdapter;
+import org.eclipse.swt.events.MouseEvent;
+import org.eclipse.swt.widgets.Label;
+
+import jogadores.Jogador;
+import velha.CampoPreenchido;
+import velha.Velha;
+
+public class MouseAdapterVelha extends MouseAdapter {
+	Jogador jogador;
+	Velha velha;
+	int index;
+	
+	public MouseAdapterVelha(Jogador jogador, Velha velha, int index)
+	{
+		super();
+		this.jogador = jogador;
+		this.velha = velha;
+		this.index = index;
+	}
+	
+	@Override
+	public void mouseUp(MouseEvent e)
+	{
+		try {
+			jogador.fazerJogada(velha, index);
+		}catch(CampoPreenchido e1)
+		{
+			
+		}
+		
+		Label lbl = ((Label) e.getSource());
+		lbl.redraw();
+	}
+}

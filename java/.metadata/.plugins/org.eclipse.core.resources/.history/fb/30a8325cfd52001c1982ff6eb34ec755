@@ -1,0 +1,225 @@
+package janelas;
+
+import org.eclipse.swt.widgets.Dialog;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Label;
+
+import java.sql.SQLException;
+
+import javax.swing.JOptionPane;
+
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.events.SelectionAdapter;
+import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.widgets.Group;
+import org.eclipse.swt.widgets.Spinner;
+
+import bancoDeDados.Banco;
+import jogadores.Computador;
+import jogadores.Jogador;
+import jogadores.Usuario;
+
+import org.eclipse.swt.widgets.Composite;
+
+public class JanelaNovoJogo extends Dialog {
+
+	protected Object result;
+	protected Shell shell;
+	private JanelaVelha velha;
+	private Group grpJogoPersonalizado;
+	private Button btnHumano;
+	private Button btnComputador;
+	private Spinner spinner;
+	private Button btnHumano_1;
+	private Button btnComputador_1;
+	private Spinner spinner_1;
+	private boolean jogoNormal;
+
+	/**
+	 * Create the dialog.
+	 * @param parent
+	 * @param style
+	 */
+	public JanelaNovoJogo(JanelaVelha velha, Shell parent, int style) {
+		super(parent, style);
+		setText("SWT Dialog");
+		this.velha = velha;
+		jogoNormal = true;
+	}
+
+	/**
+	 * Open the dialog.
+	 * @return the result
+	 */
+	public Object open() {
+		createContents();
+		shell.open();
+		shell.layout();
+		Display display = getParent().getDisplay();
+		while (!shell.isDisposed()) {
+			if (!display.readAndDispatch()) {
+				display.sleep();
+			}
+		}
+		return result;
+	}
+
+	/**
+	 * Create contents of the dialog.
+	 */
+	private void createContents() {
+		shell = new Shell(getParent(), SWT.DIALOG_TRIM | SWT.APPLICATION_MODAL);
+		shell.setSize(450, 209);
+		shell.setText(getText());
+		
+		Label lblModoDeJogo = new Label(shell, SWT.NONE);
+		lblModoDeJogo.setBounds(10, 143, 78, 15);
+		lblModoDeJogo.setText("Modo de jogo:");
+		
+		Button btnNormal = new Button(shell, SWT.RADIO);
+		btnNormal.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				grpJogoPersonalizado.setEnabled(false);
+				spinner.setEnabled(false);
+				btnHumano.setSelection(true);
+				btnHumano.setEnabled(false);
+				btnComputador.setSelection(false);
+				btnComputador.setEnabled(false);
+				spinner_1.setSelection(10);
+				spinner_1.setEnabled(false);
+				btnHumano_1.setSelection(false);
+				btnHumano_1.setEnabled(false);
+				btnComputador_1.setSelection(true);
+				btnComputador_1.setEnabled(false);
+				jogoNormal = true;
+			}
+		});
+		btnNormal.setSelection(true);
+		btnNormal.setBounds(94, 143, 59, 16);
+		btnNormal.setText("normal");
+		
+		Button btnJogar = new Button(shell, SWT.NONE);
+		btnJogar.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				shell.setVisible(false);
+				Jogador j1 = btnHumano.getSelection() == true ? new Usuario(1) : new Computador(spinner.getSelection(), 1);
+				Jogador j2 = btnHumano_1.getSelection() == true ? new Usuario(2) : new Computador(spinner_1.getSelection(), 2);
+				velha.definirJogadores(j1, j2);
+				EstadoJogo estado = (EstadoJogo) velha.open();
+				if(jogoNormal)
+				{
+					try
+					{
+						Banco banco = Banco.criarBanco();
+						banco.inserirJogo(estado.estado, estado.jogo);
+					}catch(SQLException e1)
+					{
+						JOptionPane.showMessageDialog(null, "Não foi possivel fazer salvar jogo!" + "\nErro: " + e1.getMessage(),
+								"erro", JOptionPane.OK_OPTION);
+					}
+					try {
+						JanelaMain.atualizarStatus();
+					} catch (SQLException e1) {}
+				}
+				if(!shell.isDisposed())
+					shell.setVisible(true);
+			}
+		});
+		btnJogar.setBounds(349, 133, 75, 25);
+		btnJogar.setText("Jogar");
+		
+		Button btnPersonalizado = new Button(shell, SWT.RADIO);
+		btnPersonalizado.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				grpJogoPersonalizado.setEnabled(true);
+				btnHumano.setEnabled(true);
+				btnComputador.setEnabled(true);
+				spinner_1.setEnabled(true);
+				btnHumano_1.setEnabled(true);
+				btnComputador_1.setEnabled(true);
+				jogoNormal = false;
+			}
+		});
+		btnPersonalizado.setBounds(159, 143, 94, 16);
+		btnPersonalizado.setText("personalizado");
+		
+		grpJogoPersonalizado = new Group(shell, SWT.NONE);
+		grpJogoPersonalizado.setText("jogo personalizado");
+		grpJogoPersonalizado.setBounds(10, 10, 414, 117);
+		
+		Composite composite = new Composite(grpJogoPersonalizado, SWT.NONE);
+		composite.setBounds(0, 21, 197, 96);
+		
+		Label lblJogador = new Label(composite, SWT.NONE);
+		lblJogador.setBounds(10, 0, 55, 15);
+		lblJogador.setText("Jogador 1:");
+		
+		btnHumano = new Button(composite, SWT.RADIO);
+		btnHumano.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				spinner.setEnabled(false);
+			}
+		});
+		btnHumano.setSelection(true);
+		btnHumano.setEnabled(false);
+		btnHumano.setBounds(20, 21, 68, 16);
+		btnHumano.setText("Humano");
+		
+		btnComputador = new Button(composite, SWT.RADIO);
+		btnComputador.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				spinner.setEnabled(true);
+			}
+		});
+		btnComputador.setEnabled(false);
+		btnComputador.setBounds(20, 43, 90, 16);
+		btnComputador.setText("Computador");
+		
+		spinner = new Spinner(composite, SWT.BORDER);
+		spinner.setEnabled(false);
+		spinner.setBounds(30, 65, 47, 22);
+		
+		Composite composite_1 = new Composite(grpJogoPersonalizado, SWT.NONE);
+		composite_1.setBounds(217, 21, 197, 96);
+		
+		Label lblJogador_1 = new Label(composite_1, SWT.NONE);
+		lblJogador_1.setBounds(10, 0, 55, 15);
+		lblJogador_1.setText("Jogador 2:");
+		
+		btnHumano_1 = new Button(composite_1, SWT.RADIO);
+		btnHumano_1.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				spinner_1.setEnabled(false);
+			}
+		});
+		btnHumano_1.setEnabled(false);
+		btnHumano_1.setText("Humano");
+		btnHumano_1.setBounds(20, 21, 68, 16);
+		
+		btnComputador_1 = new Button(composite_1, SWT.RADIO);
+		btnComputador_1.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				spinner_1.setEnabled(true);
+			}
+		});
+		btnComputador_1.setSelection(true);
+		btnComputador_1.setEnabled(false);
+		btnComputador_1.setText("Computador");
+		btnComputador_1.setBounds(20, 43, 90, 16);
+		
+		spinner_1 = new Spinner(composite_1, SWT.BORDER);
+		spinner_1.setSelection(10);
+		spinner_1.setEnabled(false);
+		spinner_1.setBounds(30, 65, 47, 22);
+
+	}
+}

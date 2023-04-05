@@ -1,0 +1,10 @@
+eu -1
+tu -2
+você -3
+ele -3
+ela -3
+nós -4
+vós -5
+voces -6
+eles -6
+elas -6

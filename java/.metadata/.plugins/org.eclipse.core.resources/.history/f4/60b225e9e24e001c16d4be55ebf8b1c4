@@ -1,0 +1,64 @@
+package projetoJava;
+
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Label;
+import org.eclipse.wb.swt.SWTResourceManager;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.layout.FillLayout;
+
+public class MainWindow extends Shell {
+
+	/**
+	 * Launch the application.
+	 * @param args
+	 */
+	public static void main(String args[]) {
+		try {
+			Display display = Display.getDefault();
+			MainWindow shell = new MainWindow(display);
+			shell.open();
+			shell.layout();
+			while (!shell.isDisposed()) {
+				if (!display.readAndDispatch()) {
+					display.sleep();
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * Create the shell.
+	 * @param display
+	 */
+	public MainWindow(Display display) {
+		super(display, SWT.SHELL_TRIM);
+		setLayout(new FillLayout(SWT.HORIZONTAL));
+		
+		Label lblUsurio = new Label(this, SWT.NONE);
+		lblUsurio.setText("Usu\u00E1rio:");
+		
+		Label lblNotLoggedIn = new Label(this, SWT.NONE);
+		lblNotLoggedIn.setForeground(SWTResourceManager.getColor(SWT.COLOR_RED));
+		lblNotLoggedIn.setText("not logged in");
+		createContents();
+	}
+
+	/**
+	 * Create contents of the shell.
+	 */
+	protected void createContents() {
+		setText("SWT Application");
+		setSize(450, 300);
+
+	}
+
+	@Override
+	protected void checkSubclass() {
+		// Disable the check that prevents subclassing of SWT components
+	}
+
+}

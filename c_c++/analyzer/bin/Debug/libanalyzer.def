@@ -1,0 +1,3 @@
+EXPORTS
+    DllMain @1
+    _Z9DLLloadedv @2

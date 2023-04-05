@@ -1,0 +1,259 @@
+package bancoDeDados;
+
+import java.sql.*;
+
+import javax.swing.JOptionPane;
+
+public final class Banco {
+	private static Banco instance;
+	private static final String hostName = "jdbc:mysql://localhost:3306/";
+	private static final String banco = "bd_java_velha";
+	private static final String adminUser = "root";
+	private static final String psswd = "pssw";
+	
+	private int idUsuario;
+	private String usuario;
+	private float precisao;
+	private int partidas;
+	private int partidasGanhas;
+	private int partidasPerdidas;
+	
+	public static Banco criarBanco() throws SQLException
+	{
+		if(instance == null)
+		{
+			instance = new Banco();
+		}
+		return instance;
+	}
+	
+	private Banco() throws SQLException
+	{
+		Connection adminCon = null;
+		
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			JOptionPane.showMessageDialog(null, "Não foi possivel carregar driver!", "erro", JOptionPane.OK_OPTION);
+		}
+		
+		while(true)
+		{
+			try {
+				adminCon = createAdminConnection();
+				break;
+			} catch(SQLException e)
+			{
+				int result = JOptionPane.showConfirmDialog(null, "Não foi possivel conectar ao banco de dados!" +
+						" Deseja tentar novamente?" + "\nerror: " + e.getMessage(),
+						"erro", JOptionPane.YES_NO_OPTION);
+				if(result == JOptionPane.NO_OPTION)
+				{
+					throw e;
+				}
+			}
+		}
+		
+		tentarComando(adminCon, "CREATE DATABASE IF NOT EXISTS " + banco, "Não foi possivel criar banco de dados!", 3);
+		tentarComando(adminCon, "USE " + banco, "Não foi possivel usar banco de dados!", 3);
+		tentarComando(adminCon, "CREATE TABLE IF NOT EXISTS user_info (userId INT PRIMARY KEY AUTO_INCREMENT,"
+				+ " user VARCHAR(50), gamePrecision FLOAT, games INT, wins INT, loses INT)",
+				"Não foi possivel criar tabela 'user' no banco de dados!", 3);
+		tentarComando(adminCon, "CREATE TABLE IF NOT EXISTS game_history (gameId INT PRIMARY KEY AUTO_INCREMENT,"
+				+ " userId INT, game JSON)", "Não foi possivel criar tabela 'game' no banco de dados!", 3);
+		tentarComando(adminCon, "CREATE ROLE IF NOT EXISTS user", "Não foi possivel criar função 'user' no banco de dados!", 3);
+		tentarComando(adminCon, "CREATE OR REPLACE VIEW user_view AS "
+				+ "SELECT * FROM user_info WHERE user_info.userId = 0 GROUP BY user_info.userId",  
+				"Não foi possivel recriar view!", 3);
+		
+		adminCon.close();
+	}
+	
+	public void criarUsuario(String user, String psswd) throws SQLException
+	{
+		Connection adminCon = createAdminConnection();
+		tentarComando(adminCon, "USE " + banco, "Não foi possivel usar banco de dados!", 3);
+		tentarComando(adminCon, "CREATE USER \'" + user + "\' IDENTIFIED BY \'" + psswd + 
+				"\' DEFAULT ROLE user", "Não foi possivel criar usuário de dados!", 3);
+		tentarComando(adminCon, "INSERT INTO user_info (user, gamePrecision, games, wins, loses) "
+				+ "VALUES (\'"+ user +"\', 0.0, 0, 0, 0)", "Não foi possivel alterar tabela", 3);
+		adminCon.close();
+	}
+	
+	private static Connection createAdminConnection() throws SQLException
+	{
+		return DriverManager.getConnection(hostName, adminUser, psswd);
+	}
+	
+	public Connection createUserConnection(String username, String psswd) throws SQLException
+	{
+		Connection adminCon = createAdminConnection();
+		tentarComando(adminCon, "USE " + banco, "Não foi possivel usar banco de dados!", 3);
+		Connection userConn = DriverManager.getConnection(hostName, username, psswd);
+		tentarComando(adminCon, "CREATE OR REPLACE VIEW user_view AS "
+				+ "SELECT * FROM user_info WHERE user_info.user = \"" + username + "\" GROUP BY user_info.userId", 
+				"Não foi possivel recriar view!", 3);
+		adminCon.close();
+		return userConn;
+	}
+	
+	public static void endUserConnection(Connection userCon) throws SQLException
+	{
+		Connection adminCon = createAdminConnection();
+		tentarComando(adminCon, "USE " + banco, "Não foi possivel usar banco de dados!", 3);
+		tentarComando(adminCon, "CREATE OR REPLACE VIEW user_view AS "
+				+ "SELECT * FROM user_info WHERE user_info.userId = 0 GROUP BY user_info.userId",  
+				"Não foi possivel recriar view!", 3);
+		adminCon.close();
+	}
+	
+	public void retornarInfoUsuario() throws SQLException
+	{
+		Connection adminCon = createAdminConnection();
+		tentarComando(adminCon, "USE " + banco, "Não foi possivel usar banco de dados!", 3);
+		ResultSet rs = tentarQuery(adminCon, "SELECT * FROM user_view", "Não foi possivel retornar o nome do usuário", 3);
+		if(rs == null)
+			return;
+		rs.next();
+		idUsuario = rs.getInt("userId");
+		usuario = rs.getString("user");
+		precisao = rs.getFloat("gamePrecision");
+		partidas = rs.getInt("games");
+		partidasGanhas = rs.getInt("wins");
+		partidasPerdidas = rs.getInt("loses");
+		adminCon.close();
+		
+		return;
+	}
+	
+	public int retornarIdUsuario()
+	{
+		return idUsuario;
+	}
+	
+	public String retornarNomeUsuario()
+	{
+		return usuario;
+	}
+	
+	public float retornarPrecisao()
+	{
+		return precisao;
+	}
+	
+	public int retornarPartidas()
+	{
+		return partidas;
+	}
+	
+	public int retornarPartidasGanhas()
+	{
+		return partidasGanhas;
+	}
+	
+	public int retornarPartidasPerdidas()
+	{
+		return partidasPerdidas;
+	}
+	
+	@SuppressWarnings("unused")
+	private static void tentarComando(Connection conn, String comando, String mensagemErro) throws SQLException
+	{
+		while(true)
+		{
+			try {
+				PreparedStatement ps = conn.prepareStatement(comando);
+				ps.execute();
+				break;
+			} catch(SQLException e)
+			{
+				int result = JOptionPane.showConfirmDialog(null, mensagemErro +
+			"\nDeseja tentar novamente?" + "\nerror: " + e.getMessage(),
+			"erro", JOptionPane.YES_NO_OPTION);
+				if(result == JOptionPane.NO_OPTION)
+				{
+					conn.close();
+					throw e;
+				}
+			}
+		}
+	}
+	
+	@SuppressWarnings("unused")
+	private static void tentarComando(Connection conn, String comando, String mensagemErro, int maximoTentativas) throws SQLException
+	{
+		for(int i = 0; true; ++i)
+		{
+			try {
+				PreparedStatement ps = conn.prepareStatement(comando);
+				ps.execute();
+				break;
+			} catch(SQLException e)
+			{
+				if(i >= maximoTentativas)
+				{
+					conn.close();
+					throw e;
+				}
+				int result = JOptionPane.showConfirmDialog(null, mensagemErro +
+						"\nDeseja tentar novamente?" + "\nerror: " + e.getMessage(),
+						"erro", JOptionPane.YES_NO_OPTION);
+				if(result == JOptionPane.NO_OPTION)
+				{
+					conn.close();
+					throw e;
+				}
+			}
+		}
+	}
+	
+	@SuppressWarnings("unused")
+	private static ResultSet tentarQuery(Connection conn, String comando, String mensagemErro) throws SQLException
+	{
+		while(true)
+		{
+			try {
+				PreparedStatement ps = conn.prepareStatement(comando);
+				return ps.executeQuery();
+			} catch(SQLException e)
+			{
+				int result = JOptionPane.showConfirmDialog(null, mensagemErro +
+			"\nDeseja tentar novamente?" + "\nerror: " + e.getMessage(),
+			"erro", JOptionPane.YES_NO_OPTION);
+				if(result == JOptionPane.NO_OPTION)
+				{
+					conn.close();
+					throw e;
+				}
+			}
+		}
+	}
+	
+	@SuppressWarnings("unused")
+	private static ResultSet tentarQuery(Connection conn, String comando, String mensagemErro, int maximoTentativas) throws SQLException
+	{
+		for(int i = 0; true; ++i)
+		{
+			try {
+				PreparedStatement ps = conn.prepareStatement(comando);
+				return ps.executeQuery();
+			} catch(SQLException e)
+			{
+				if(i >= maximoTentativas)
+				{
+					conn.close();
+					throw e;
+				}
+				int result = JOptionPane.showConfirmDialog(null, mensagemErro +
+						"\nDeseja tentar novamente?" + "\nerror: " + e.getMessage(),
+						"erro", JOptionPane.YES_NO_OPTION);
+				if(result == JOptionPane.NO_OPTION)
+				{
+					conn.close();
+					throw e;
+				}
+			}
+		}
+	}
+}

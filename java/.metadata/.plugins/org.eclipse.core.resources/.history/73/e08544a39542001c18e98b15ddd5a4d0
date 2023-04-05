@@ -1,0 +1,28 @@
+package Velha;
+
+import java.util.Scanner;
+
+public class Usuario implements Jogador {
+	private Scanner scan;
+	
+	public Usuario(Scanner scan)
+	{
+		this.scan = scan;
+	}
+	
+	public int fazerJogada(Velha velha, int jogador) {
+		do
+		{
+			System.out.println(velha.toString());
+			System.out.print("index:");
+			
+			try {
+				return velha.fazerJogada(scan.nextInt(), jogador);
+			}catch(CampoPreenchido e)
+			{
+				System.out.println("Jogada Inválida");
+			}
+		}while(true);
+	}
+
+}

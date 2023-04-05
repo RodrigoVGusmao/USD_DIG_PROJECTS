@@ -1,0 +1,166 @@
+package janelas;
+
+import org.eclipse.swt.widgets.Dialog;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+
+import jogadores.Jogador;
+
+import javax.swing.JOptionPane;
+
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.widgets.Label;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.layout.GridData;
+import org.eclipse.swt.layout.FillLayout;
+
+import velha.Velha;
+
+public class JanelaVelha extends Dialog {
+
+	protected Object result;
+	protected Shell shlVelha;
+	private Velha velha;
+	private Jogador atual;
+	private Jogador jogador1;
+	private Jogador jogador2;
+	
+
+	/**
+	 * Create the dialog.
+	 * @param parent
+	 * @param style
+	 */
+	public JanelaVelha(Velha velha, Jogador jogador1, Jogador jogador2, Shell parent, int style) {
+		super(parent, style);
+		setText("SWT Dialog");
+		this.velha = velha;
+		this.jogador1 = jogador1;
+		this.jogador2 = jogador2;
+		atual = jogador1;
+	}
+
+	/**
+	 * Open the dialog.
+	 * @return the result
+	 */
+	public Object open() {
+		createContents();
+		shlVelha.open();
+		shlVelha.layout();
+		Display display = getParent().getDisplay();
+		while (!shlVelha.isDisposed()) {
+			if (!display.readAndDispatch()) {		
+				display.sleep();
+			}
+		}
+		return result;
+	}
+
+	/**
+	 * Create contents of the dialog.
+	 */
+	private void createContents() {
+		shlVelha = new Shell(getParent(), SWT.DIALOG_TRIM | SWT.RESIZE);
+		shlVelha.setSize(300, 300);
+		shlVelha.setText("Jogo da velha");
+		shlVelha.setLayout(new FillLayout(SWT.HORIZONTAL));
+		
+		Composite composite = new Composite(shlVelha, SWT.NONE);
+		composite.setLayout(new GridLayout(3, true));
+		
+		Label lblCampo = new Label(composite, SWT.BORDER);
+		lblCampo.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 1, 1));
+		lblCampo.addControlListener(new ControlAdapterVelha());
+		lblCampo.addPaintListener(new PaintListenerVelha(velha, 0));
+		lblCampo.addMouseListener(new MouseAdapterVelha(this, velha, 0));
+		
+		Label lblCampo_1 = new Label(composite, SWT.BORDER);
+		lblCampo_1.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 1, 1));
+		lblCampo_1.addControlListener(new ControlAdapterVelha());
+		lblCampo_1.addPaintListener(new PaintListenerVelha(velha, 1));
+		lblCampo_1.addMouseListener(new MouseAdapterVelha(this, velha, 1));
+		
+		Label lblCampo_2 = new Label(composite, SWT.BORDER);
+		lblCampo_2.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 1, 1));
+		lblCampo_2.addControlListener(new ControlAdapterVelha());
+		lblCampo_2.addPaintListener(new PaintListenerVelha(velha, 2));
+		lblCampo_2.addMouseListener(new MouseAdapterVelha(this, velha, 2));
+		
+		Label lblCampo_3 = new Label(composite, SWT.BORDER);
+		lblCampo_3.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 1, 1));
+		lblCampo_3.addControlListener(new ControlAdapterVelha());
+		lblCampo_3.addPaintListener(new PaintListenerVelha(velha, 3));
+		lblCampo_3.addMouseListener(new MouseAdapterVelha(this, velha, 3));
+		
+		Label lblCampo_4 = new Label(composite, SWT.BORDER);
+		lblCampo_4.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 1, 1));
+		lblCampo_4.addControlListener(new ControlAdapterVelha());
+		lblCampo_4.addPaintListener(new PaintListenerVelha(velha, 4));
+		lblCampo_4.addMouseListener(new MouseAdapterVelha(this, velha, 4));
+		
+		Label lblCampo_5 = new Label(composite, SWT.BORDER);
+		lblCampo_5.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 1, 1));
+		lblCampo_5.addControlListener(new ControlAdapterVelha());
+		lblCampo_5.addPaintListener(new PaintListenerVelha(velha, 5));
+		lblCampo_5.addMouseListener(new MouseAdapterVelha(this, velha, 5));
+		
+		Label lblCampo_6 = new Label(composite, SWT.BORDER);
+		lblCampo_6.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 1, 1));
+		lblCampo_6.addControlListener(new ControlAdapterVelha());
+		lblCampo_6.addPaintListener(new PaintListenerVelha(velha, 6));
+		lblCampo_6.addMouseListener(new MouseAdapterVelha(this, velha, 6));
+		
+		Label lblCampo_7 = new Label(composite, SWT.BORDER);
+		lblCampo_7.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 1, 1));
+		lblCampo_7.addControlListener(new ControlAdapterVelha());
+		lblCampo_7.addPaintListener(new PaintListenerVelha(velha, 7));
+		lblCampo_7.addMouseListener(new MouseAdapterVelha(this, velha, 7));
+		
+		Label lblCampo_8 = new Label(composite, SWT.BORDER);
+		lblCampo_8.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 1, 1));
+		lblCampo_8.addControlListener(new ControlAdapterVelha());
+		lblCampo_8.addPaintListener(new PaintListenerVelha(velha, 8));
+		lblCampo_8.addMouseListener(new MouseAdapterVelha(this, velha, 8));
+
+	}
+	
+	public void reiniciar()
+	{
+		velha.limparCampo();
+	}
+	
+	protected void testarEstado(int estado)
+	{
+		switch(estado)
+		{
+		case 1:
+			JOptionPane.showMessageDialog(null, "vitoria do jogador 1","erro", JOptionPane.OK_OPTION);
+			break;
+		case 2:
+			JOptionPane.showMessageDialog(null, "vitoria do jogador 2","erro", JOptionPane.OK_OPTION);
+			break;
+		case 3:
+			JOptionPane.showMessageDialog(null, "Empate","erro", JOptionPane.OK_OPTION);
+			break;
+		default:
+			return;
+		}
+		shlVelha.redraw();
+		reiniciar();
+	}
+	
+	protected Jogador retornarJogadorAtual()
+	{
+		return atual;
+	}
+	
+	protected void trocarJogador()
+	{
+		if(atual == jogador1)
+			atual = jogador2;
+		else
+			atual = jogador1;
+	}
+}

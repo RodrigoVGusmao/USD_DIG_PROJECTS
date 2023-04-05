@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="degine" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/degine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/degine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++17" />
+			<Add option="-std=c17" />
+			<Add option="-m64" />
+			<Add directory="$(#sdl2.include)" />
+			<Add directory="$(#glew.INCLUDE)" />
+			<Add directory="$(#sdl2_image.INCLUDE)" />
+		</Compiler>
+		<Linker>
+			<Add option="-static-libstdc++" />
+			<Add option="-static-libgcc" />
+			<Add option="-m64" />
+			<Add library="mingw32" />
+			<Add library="opengl32" />
+			<Add library="glew32" />
+			<Add library="SDL2main" />
+			<Add library="SDL2.dll" />
+			<Add library="user32" />
+			<Add library="gdi32" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+			<Add library="SDL2_image" />
+			<Add directory="$(#sdl2.lib)" />
+			<Add directory="$(#glew.LIB)" />
+			<Add directory="$(#sdl2_image.LIB)" />
+		</Linker>
+		<ExtraCommands>
+			<Add after="XCOPY $(#sdl2)\bin\*.dll $(TARGET_OUTPUT_DIR) /D /Y" />
+			<Add after="XCOPY $(#glew.bin)\*.dll $(TARGET_OUTPUT_DIR) /D /Y" />
+		</ExtraCommands>
+		<Unit filename="assets/wall.jpg" />
+		<Unit filename="include/ctrycatch.h" />
+		<Unit filename="include/object.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/physics.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/render.h" />
+		<Unit filename="include/thread.h" />
+		<Unit filename="include/window.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/GLRender.cpp" />
+		<Unit filename="src/GLwindow.cpp" />
+		<Unit filename="src/multiThread.cpp" />
+		<Unit filename="src/physics2D.cpp" />
+		<Unit filename="src/render.cpp" />
+		<Unit filename="src/singleThread.cpp" />
+		<Unit filename="src/window.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

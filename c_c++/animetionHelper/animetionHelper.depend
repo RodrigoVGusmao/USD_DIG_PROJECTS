@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1670352937 source:c:\users\digao\onedrive\documentos\programming\c_c++\animetionhelper\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<math.h>
+

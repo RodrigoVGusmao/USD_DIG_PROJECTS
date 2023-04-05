@@ -1,0 +1,113 @@
+package Velha;
+
+public class Velha {
+	private int[] campos;
+	private int campoVazio;
+	
+	Velha()
+	{
+		campos = new int[9];
+		limparCampo();
+	}
+	
+	public void limparCampo()
+	{
+		campoVazio = 9;
+		for(int i = 0; i < campos.length; ++i)
+		{
+			campos[i] = 0;
+		}
+	}
+	
+	public int fazerJogada(int index, int jogador)
+	{
+		if(campos[index] == 0 || jogador == 0)
+		{
+			campos[index] = jogador;
+			--campoVazio;
+		}
+		else
+			throw new CampoPreenchido("campo já ocupado");
+		
+		return testarEstado();
+	}
+	
+	public int[] RetornarCampo()
+	{
+		return campos;
+	}
+	
+	public String toString()
+	{
+		String campo = new String();
+		for(int i = 0; i < campos.length; ++i)
+		{
+			if(i % 3 == 0)
+				campo += '\n';
+			campo += ((campos[i] == 0) ? "*" : ((campos[i] == 1) ? "X" : ((campos[i] == 2) ? "O" : "!"))) + " ";
+		}
+		return campo;
+	}
+	
+	/*meteodos privados*/
+	
+	//testa se linha foi ocupada por mesmo jogador
+	private int procLinhas(int inicial, int max)
+	{
+		int resultado = ~0;
+		for(int i = 0; i < max; ++i)
+		{
+			resultado &= campos[i];
+		}
+		return resultado;
+	}
+	
+	//testa se coluna foi ocupada por mesmo jogador
+	private int procColunas(int inicial, int tamanhoLinha, int max)
+	{
+		int resultado = ~0;
+		for(int i = 0; i < max; ++i)
+		{
+			resultado &= campos[i*tamanhoLinha];
+		}
+		return resultado;
+	}
+	
+	//testa se diagonal para direita foi ocupada por mesmo jogador
+	private int procDiagPos(int inicial, int tamanhoLinha, int max)
+	{
+		int resultado = ~0;
+		for(int i = 0; i < max; ++i)
+		{
+			resultado &= campos[i*(tamanhoLinha+1)];
+		}
+		return resultado;
+	}
+	
+	//testa se diagonal para esquerda foi ocupada por mesmo jogador
+	private int procDiagNeg(int inicial, int tamanhoLinha, int max)
+	{
+		int resultado = ~0;
+		for(int i = 0; i < max; ++i)
+		{
+			resultado &= campos[i*(tamanhoLinha+1)];
+		}
+		return resultado;
+	}
+	
+	//testa se jogo acabou ou continua, e quem ganhou
+	private int testarEstado()
+	{
+		int test = 0;
+		for(int i = 0; i < campos.length/3; ++i)
+		{
+			test |= procLinhas(i*3, 3) | procColunas(i, 3, 3);
+		}
+		test |= procDiagPos(0, 3, 3) | procDiagNeg(2, 3, 3);
+		
+		if(campoVazio == 0 && test == 0)
+			return 3;
+		
+		return test;
+	}
+}

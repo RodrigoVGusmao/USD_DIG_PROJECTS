@@ -1,0 +1,7 @@
+EXPORTS
+    DllMain@12 @1
+    _Z15GetKeyStateHooki@4 @2
+    _Z17GetInputStateHookv@0 @3
+    _Z20GetKeyboardStateHookPh@4 @4
+    _Z27DialogBoxIndirectParamWHookP11HINSTANCE__PK11DLGTEMPLATEP6HWND__PU7stdcallFiS5_jjlEl@20 @5
+    _Z9DLLloadedv @6

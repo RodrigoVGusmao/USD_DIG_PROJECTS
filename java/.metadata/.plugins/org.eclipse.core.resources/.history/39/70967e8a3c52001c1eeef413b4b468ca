@@ -1,0 +1,23 @@
+package janelas;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import org.eclipse.swt.widgets.Shell;
+
+public class ActionPerformedVelha implements ActionListener {
+
+	Shell shl;
+	
+	public ActionPerformedVelha(Shell shl)
+	{
+		super();
+		this.shl = shl;
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		shl.redraw();
+	}
+
+}

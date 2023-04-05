@@ -1,0 +1,81 @@
+package janelas;
+
+import org.eclipse.swt.widgets.Dialog;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+
+import bancoDeDados.Banco;
+import bancoDeDados.HistoricoJogo;
+
+import org.eclipse.swt.widgets.List;
+
+import java.sql.SQLException;
+import java.util.Vector;
+
+import org.eclipse.swt.SWT;
+import org.eclipse.jface.viewers.ListViewer;
+import org.eclipse.swt.events.SelectionAdapter;
+import org.eclipse.swt.events.SelectionEvent;
+
+public class JanelaAnalisePartida extends Dialog {
+
+	protected Object result;
+	protected Shell shlHistricoDePartidas;
+
+	/**
+	 * Create the dialog.
+	 * @param parent
+	 * @param style
+	 */
+	public JanelaAnalisePartida(Shell parent, int style) {
+		super(parent, style);
+		setText("SWT Dialog");
+	}
+
+	/**
+	 * Open the dialog.
+	 * @return the result
+	 */
+	public Object open() {
+		createContents();
+		shlHistricoDePartidas.open();
+		shlHistricoDePartidas.layout();
+		Display display = getParent().getDisplay();
+		while (!shlHistricoDePartidas.isDisposed()) {
+			if (!display.readAndDispatch()) {
+				display.sleep();
+			}
+		}
+		return result;
+	}
+
+	/**
+	 * Create contents of the dialog.
+	 */
+	private void createContents() {
+		shlHistricoDePartidas = new Shell(getParent(), SWT.DIALOG_TRIM | SWT.APPLICATION_MODAL);
+		shlHistricoDePartidas.setSize(450, 300);
+		shlHistricoDePartidas.setText("Hist\u00F3rico de partidas");
+		
+		ListViewer listViewer = new ListViewer(shlHistricoDePartidas, SWT.BORDER | SWT.V_SCROLL);
+		List list = listViewer.getList();
+		list.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				
+			}
+			@Override
+			public void widgetDefaultSelected(SelectionEvent e) {
+				
+			}
+		});
+		list.setBounds(0, 0, 434, 261);
+
+		try {
+			Banco banco = Banco.criarBanco();
+			Vector<HistoricoJogo> data = banco.retornarHistoricoPartidas();
+			for(int i = 0; i < data.size(); ++i)
+				list.add(((HistoricoJogo)data.elementAt(i)).toString());
+		} catch (SQLException e) {}
+	}
+}

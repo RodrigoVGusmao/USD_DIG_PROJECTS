@@ -1,0 +1,78 @@
+package gui;
+
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.GridBagLayout;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
+
+import javax.swing.*;
+
+public class Janela implements ActionListener{
+
+	public Janela()
+	{
+		JFrame janela = new JFrame("Velha");
+		JPanel velha = new JPanel(new GridLayout(3, 3));
+		JPanel analise = new JPanel(new GridLayout(0, 3));
+		int indexX = 0;
+		int indexO = 0;
+		
+		JPanel campo = new JPanel(new GridBagLayout());
+		JPanel campoX[] = new JPanel[5];
+		JPanel campoO[] = new JPanel[4];
+
+		for(int i = 0; i < 5; ++i)
+		{
+			campoX[i] = new JPanel(){
+				private static final long serialVersionUID = -3980433375330516455L;
+
+				protected void paintComponent(Graphics g) {
+					super.paintComponent(g);
+					g.drawLine((int)(velha.getWidth()*0.1), (int)(velha.getHeight()*0.1),
+							(int)(velha.getWidth()*0.9), (int)(velha.getHeight()*0.9));
+					g.drawLine((int)(velha.getWidth()*0.9), (int)(velha.getHeight()*0.1),
+							(int)(velha.getWidth()*0.1), (int)(velha.getHeight()*0.9));
+				}
+			};
+			velha.add(campoX[i]);
+			campoX[i].addComponentListener(new ComponentAdapter() {
+				@Override
+				public void componentResized(ComponentEvent e)
+				{
+					int size = velha.getWidth() > velha.getHeight() ? velha.getHeight() : velha.getWidth();
+					velha.setSize(new Dimension(size,size));
+					
+				}
+			});
+		}
+		for(int i = 0; i < 4; ++i)
+		{
+			campoO[i] = new JPanel(){
+				private static final long serialVersionUID = 808460419318444051L;
+
+				protected void paintComponent(Graphics g) {
+					super.paintComponent(g);
+					g.drawOval((int)(this.getWidth()*0.1), (int)(this.getHeight()*0.1),
+							(int)(this.getWidth()*0.9), (int)(this.getHeight()*0.9));
+				}
+			};
+			velha.add(campoO[i]);
+		}
+		campo.add(velha);
+		
+		janela.add(campo);
+		janela.pack();
+		janela.setVisible(true);
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

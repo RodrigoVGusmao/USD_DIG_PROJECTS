@@ -1,0 +1,10 @@
+﻿  mainWindowProc.cpp
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\textEditor\textEditor\mainWindowProc.cpp(117,65): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\textEditor\textEditor\mainWindowProc.cpp(47,9): warning C4101: 'value': unreferenced local variable
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\textEditor\textEditor\mainWindowProc.cpp(46,9): warning C4101: 'type': unreferenced local variable
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\textEditor\textEditor\mainWindowProc.cpp(187,25): warning C4244: 'initializing': conversion from 'LRESULT' to 'unsigned int', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\textEditor\textEditor\mainWindowProc.cpp(189,25): warning C4244: 'initializing': conversion from 'LRESULT' to 'unsigned int', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\textEditor\textEditor\mainWindowProc.cpp(191,107): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\textEditor\textEditor\mainWindowProc.cpp(209,17): warning C4244: 'initializing': conversion from 'LRESULT' to 'int', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\textEditor\textEditor\mainWindowProc.cpp(214,130): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  textEditor.vcxproj -> C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\textEditor\x64\Debug\textEditor.exe

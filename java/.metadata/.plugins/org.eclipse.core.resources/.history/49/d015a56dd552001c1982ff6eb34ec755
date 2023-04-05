@@ -1,0 +1,156 @@
+package janelas;
+
+import org.eclipse.swt.widgets.Dialog;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Text;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import javax.swing.JOptionPane;
+
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.widgets.Label;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.events.SelectionAdapter;
+import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.wb.swt.SWTResourceManager;
+
+import bancoDeDados.Banco;
+
+public class JanelaLogin extends Dialog {
+
+	protected Object result;
+	protected Shell shlLogin;
+	private Text text;
+	private Text text_1;
+	private Label lblUsurioOuSenha;
+
+	/**
+	 * Create the dialog.
+	 * @param parent
+	 * @param style
+	 */
+	public JanelaLogin(Shell parent, int style) {
+		super(parent, style);
+		setText("SWT Dialog");
+		result = null;
+	}
+
+	/**
+	 * Open the dialog.
+	 * @return the result
+	 */
+	public Object open() {
+		createContents();
+		shlLogin.open();
+		shlLogin.layout();
+		Display display = getParent().getDisplay();
+		while (!shlLogin.isDisposed()) {
+			if (!display.readAndDispatch()) {
+				display.sleep();
+			}
+		}
+		return result;
+	}
+
+	/**
+	 * Create contents of the dialog.
+	 */
+	private void createContents() {
+		shlLogin = new Shell(getParent(), SWT.DIALOG_TRIM | SWT.PRIMARY_MODAL);
+		shlLogin.setSize(242, 262);
+		shlLogin.setText("Login");
+		
+		text = new Text(shlLogin, SWT.BORDER);
+		text.setBounds(42, 41, 152, 21);
+		
+		text_1 = new Text(shlLogin, SWT.BORDER | SWT.PASSWORD);
+		text_1.setBounds(42, 99, 152, 21);
+		
+		Label lblUsuario = new Label(shlLogin, SWT.NONE);
+		lblUsuario.setBounds(42, 20, 55, 15);
+		lblUsuario.setText("Usuário");
+		
+		Label lblSenha = new Label(shlLogin, SWT.NONE);
+		lblSenha.setBounds(42, 78, 55, 15);
+		lblSenha.setText("Senha");
+		
+		Button btnLogin = new Button(shlLogin, SWT.NONE);
+		btnLogin.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				if(camposValidos())
+				{
+					Banco banco;
+					lblUsurioOuSenha.setVisible(false);
+					try {
+						banco = Banco.criarBanco();
+						
+					} catch (SQLException e1) {
+						JOptionPane.showMessageDialog(null, "Não foi conectar ao banco de dados!" + "\nErro: " + e1.getMessage(),
+								"erro", JOptionPane.OK_OPTION);
+						return;
+					}
+					try {
+						banco.createUserConnection(text.getText(), text_1.getText());
+					} catch (SQLException e1) {
+						// TODO Auto-generated catch block
+						lblUsurioOuSenha.setVisible(true);
+						return;
+					}
+					try {
+						banco.retornarInfoUsuario();
+					} catch(SQLException e1)
+					{
+						
+					}
+					shlLogin.close();
+				}
+				else
+					lblUsurioOuSenha.setVisible(true);
+			}
+		});
+		btnLogin.setBounds(130, 179, 75, 25);
+		btnLogin.setText("Login");
+		
+		Button btnCadastro = new Button(shlLogin, SWT.NONE);
+		btnCadastro.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				JanelaCadastro cadastro = new JanelaCadastro(getParent(), 0);
+				shlLogin.setVisible(false);
+				cadastro.open();
+				shlLogin.setVisible(true);
+				shlLogin.setActive();
+			}
+		});
+		btnCadastro.setBounds(119, 147, 86, 25);
+		btnCadastro.setText("criar usuario...");
+		
+		Button btnCancelar = new Button(shlLogin, SWT.NONE);
+		btnCancelar.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				shlLogin.close();
+			}
+		});
+		btnCancelar.setText("Cancelar");
+		btnCancelar.setBounds(20, 179, 75, 25);
+		
+		lblUsurioOuSenha = new Label(shlLogin, SWT.NONE);
+		lblUsurioOuSenha.setForeground(SWTResourceManager.getColor(SWT.COLOR_RED));
+		lblUsurioOuSenha.setBounds(42, 126, 152, 15);
+		lblUsurioOuSenha.setText("Usu\u00E1rio ou senha inv\u00E1lidos");
+		lblUsurioOuSenha.setVisible(false);
+
+	}
+	
+	private boolean camposValidos()
+	{
+		if(text.getText().isEmpty() || text_1.getText().isEmpty())
+			return false;
+		return true;
+	}
+}

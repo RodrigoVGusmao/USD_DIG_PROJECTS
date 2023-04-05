@@ -1,0 +1,97 @@
+package projetoJava;
+
+import org.eclipse.swt.widgets.Dialog;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Text;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.widgets.Label;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.events.SelectionAdapter;
+import org.eclipse.swt.events.SelectionEvent;
+
+public class Login extends Dialog {
+
+	protected Object result;
+	protected Shell shlLogin;
+	private Text text;
+	private Text text_1;
+
+	/**
+	 * Create the dialog.
+	 * @param parent
+	 * @param style
+	 */
+	public Login(Shell parent, int style) {
+		super(parent, style);
+		setText("SWT Dialog");
+	}
+
+	/**
+	 * Open the dialog.
+	 * @return the result
+	 */
+	public Object open() {
+		createContents();
+		shlLogin.open();
+		shlLogin.layout();
+		Display display = getParent().getDisplay();
+		while (!shlLogin.isDisposed()) {
+			if (!display.readAndDispatch()) {
+				display.sleep();
+			}
+		}
+		return result;
+	}
+
+	/**
+	 * Create contents of the dialog.
+	 */
+	private void createContents() {
+		shlLogin = new Shell(getParent(), SWT.DIALOG_TRIM | SWT.PRIMARY_MODAL);
+		shlLogin.setSize(242, 236);
+		shlLogin.setText("Login");
+		
+		text = new Text(shlLogin, SWT.BORDER);
+		text.setBounds(42, 52, 152, 21);
+		
+		text_1 = new Text(shlLogin, SWT.BORDER | SWT.PASSWORD);
+		text_1.setBounds(42, 110, 152, 21);
+		
+		Label lblUsuario = new Label(shlLogin, SWT.NONE);
+		lblUsuario.setBounds(42, 31, 55, 15);
+		lblUsuario.setText("Usuário");
+		
+		Label lblSenha = new Label(shlLogin, SWT.NONE);
+		lblSenha.setBounds(42, 89, 55, 15);
+		lblSenha.setText("Senha");
+		
+		Button btnLogin = new Button(shlLogin, SWT.NONE);
+		btnLogin.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+			}
+		});
+		btnLogin.setBounds(135, 169, 75, 25);
+		btnLogin.setText("Login");
+		
+		Button btnCadastro = new Button(shlLogin, SWT.NONE);
+		btnCadastro.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+			}
+		});
+		btnCadastro.setBounds(124, 137, 86, 25);
+		btnCadastro.setText("criar usuario...");
+		
+		Button btnCancelar = new Button(shlLogin, SWT.NONE);
+		btnCancelar.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+			}
+		});
+		btnCancelar.setText("Cancelar");
+		btnCancelar.setBounds(25, 169, 75, 25);
+
+	}
+}

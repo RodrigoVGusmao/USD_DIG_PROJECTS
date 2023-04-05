@@ -1,0 +1,7 @@
+package jogador;
+
+import Velha.Velha;
+
+public interface Jogador {
+	public int fazerJogada(Velha velha, int jogador);
+}

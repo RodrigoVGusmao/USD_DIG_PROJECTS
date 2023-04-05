@@ -1,0 +1,32 @@
+package jogadores;
+
+import java.util.Scanner;
+
+import janelas.JanelaVelha;
+import velha.CampoPreenchido;
+import velha.Velha;
+
+public class Usuario implements Jogador {
+	private JanelaVelha janela;
+	private int jogador;
+	
+	public Usuario(int jogador, JanelaVelha janela)
+	{
+		this.jogador = jogador;
+	}
+	
+	public int fazerJogada(Velha velha) {
+		do
+		{
+			System.out.println(velha.toString());
+			System.out.print("index:");
+			try {
+				return velha.fazerJogada(scan.nextInt(), jogador);
+			}catch(CampoPreenchido e)
+			{
+				System.out.println("Jogada Inválida");
+			}
+		}while(true);
+	}
+
+}

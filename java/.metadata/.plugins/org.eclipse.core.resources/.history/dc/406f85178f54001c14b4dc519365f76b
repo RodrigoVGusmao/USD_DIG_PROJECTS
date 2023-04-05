@@ -1,0 +1,55 @@
+package prova2;
+
+import javax.swing.JOptionPane;
+
+public class Prova {
+
+	public static void main(String[] args) {
+		double base;
+		double exp;
+		try {
+			base = entradaDouble("Base: (Real)", "Entrada inválida");
+			exp = entradaInteger("Expoente: (Inteiro)", "Entrada inválida");
+		} catch(NullPointerException e)
+		{
+			return;
+		}
+		
+		//double resultado = Math.pow(base, exp);
+		double resultado = Calculo.potencia(base, (int)exp);
+		
+		JOptionPane.showMessageDialog(null, resultado);
+	}
+	
+	private static double entradaDouble(String txt, String erro)
+	{
+		double ret;
+		while(true)
+		{
+			try {
+				ret = Double.parseDouble(JOptionPane.showInputDialog(txt));
+				break;
+			} catch(NumberFormatException e)
+			{
+				JOptionPane.showMessageDialog(null, erro + "\nErro:" + e.getMessage());
+			}
+		}
+		return ret;
+	}
+	
+	private static double entradaInteger(String txt, String erro)
+	{
+		double ret;
+		while(true)
+		{
+			try {
+				ret = Integer.parseInt(JOptionPane.showInputDialog(txt));
+				break;
+			} catch(NumberFormatException e)
+			{
+				JOptionPane.showMessageDialog(null, erro + "\nErro:" + e.getMessage());
+			}
+		}
+		return ret;
+	}
+}

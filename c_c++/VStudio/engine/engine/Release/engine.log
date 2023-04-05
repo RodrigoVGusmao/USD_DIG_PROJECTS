@@ -1,0 +1,10 @@
+﻿  engine.cpp
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\engine\engine\mainWindow.h(262,149): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\engine\engine\mainWindow.h(263,156): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\engine\engine\mainWindow.h(269,25): warning C4018: '<': signed/unsigned mismatch
+  Generating code
+  1 of 149 functions ( 0.7%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  engine.vcxproj -> C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\engine\Release\engine.exe

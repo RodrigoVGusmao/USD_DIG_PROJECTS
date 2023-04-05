@@ -1,0 +1,76 @@
+package Velha;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		Velha jogo = new Velha();
+		Computador comp = new Computador();
+		
+		boolean sair = false;
+		boolean menu = true;
+		int jogador = 1;
+		int resultado;
+		while(!sair)
+		{
+			if(menu)
+			{
+				do {
+					System.out.print("Deseja jogar como jogador 1 ou 2:");
+					if((jogador = scan.nextInt()) == 1 || jogador == 2)
+						break;
+					System.out.println("Opção invalida!");
+				}while(true);
+				menu = false;
+			}
+			
+			if(jogador == 2)
+				comp.fazerJogada(jogo, 1);
+			
+			boolean valido;
+			do
+			{
+				System.out.println(jogo.toString());
+				System.out.print("index:");
+				
+				try {
+					jogo.fazerJogada(scan.nextInt(), jogador);
+					valido = true;
+				}catch(CampoPreenchido e)
+				{
+					System.out.println("Jogada Inválida");
+					valido = false;
+				}
+			}while(!valido);
+			
+			if(jogador == 1)
+				comp.fazerJogada(jogo, 2);
+			
+			if((resultado = jogo.testarEstado()) != 0)
+			{
+				menu = true;
+				
+				if((resultado & 1) > 0)
+					System.out.println("vitoria do jogador 1");
+				if((resultado & 2) > 0)
+					System.out.println("vitoria do jogador 2");
+				
+				String entrada;
+				do {
+					System.out.print("Deseja jogar novamente (s/n):");
+					if((entrada = scan.next()).toLowerCase().charAt(0) == 's' || entrada.toLowerCase().charAt(0) == 'n')
+						break;
+					System.out.println("Opção invalida!");
+				}while(true);
+				
+				if(entrada.toLowerCase() == "n")
+					sair = true;
+			}
+		}
+		scan.close();
+	}
+
+}

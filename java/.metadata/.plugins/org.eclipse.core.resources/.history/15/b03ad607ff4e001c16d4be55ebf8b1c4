@@ -1,0 +1,165 @@
+package projetoJava;
+
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Label;
+import org.eclipse.wb.swt.SWTResourceManager;
+import swing2swt.layout.FlowLayout;
+import org.eclipse.swt.widgets.CoolBar;
+import org.eclipse.swt.widgets.Table;
+import org.eclipse.swt.widgets.TableColumn;
+import org.eclipse.swt.widgets.TableItem;
+import org.eclipse.swt.custom.ViewForm;
+import org.eclipse.swt.layout.RowLayout;
+import org.eclipse.swt.layout.RowData;
+import org.eclipse.swt.layout.FormLayout;
+import org.eclipse.swt.layout.FormData;
+import org.eclipse.swt.layout.FormAttachment;
+import org.eclipse.swt.widgets.Group;
+import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.events.SelectionAdapter;
+import org.eclipse.swt.events.SelectionEvent;
+
+public class MainWindow extends Shell {
+
+	/**
+	 * Launch the application.
+	 * @param args
+	 */
+	public static void main(String args[]) {
+		try {
+			Display display = Display.getDefault();
+			MainWindow shell = new MainWindow(display);
+			
+			Login login = new Login(shell, 0);
+			login.open();
+			
+
+			
+			shell.open();
+			shell.layout();
+			while (!shell.isDisposed()) {
+				if (!display.readAndDispatch()) {
+					display.sleep();
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * Create the shell.
+	 * @param display
+	 */
+	public MainWindow(Display display) {
+		super(display, SWT.SHELL_TRIM);
+		setLayout(null);
+		
+		Label lblUsurio = new Label(this, SWT.NONE);
+		lblUsurio.setBounds(3, 3, 43, 15);
+		lblUsurio.setText("Usu\u00E1rio:");
+		
+		Label lblNotLoggedIn = new Label(this, SWT.NONE);
+		lblNotLoggedIn.setBounds(52, 3, 222, 15);
+		lblNotLoggedIn.setForeground(SWTResourceManager.getColor(SWT.COLOR_RED));
+		lblNotLoggedIn.setText("not logged in");
+		
+		Group grpDados = new Group(this, SWT.NONE);
+		grpDados.setBounds(280, 3, 144, 248);
+		grpDados.setText("dados");
+		grpDados.setToolTipText("");
+		grpDados.setLayout(new GridLayout(1, false));
+		
+		Composite composite = new Composite(this, SWT.NONE);
+		composite.setBounds(3, 24, 271, 227);
+		composite.setLayout(new GridLayout(6, false));
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		
+		Button btnVerHistrico = new Button(composite, SWT.NONE);
+		btnVerHistrico.setText("Ver hist\u00F3rico");
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		new Label(composite, SWT.NONE);
+		
+		Button btnNovoJogo = new Button(composite, SWT.NONE);
+		btnNovoJogo.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+			}
+		});
+		btnNovoJogo.setText("Novo Jogo...");
+		createContents();
+	}
+
+	/**
+	 * Create contents of the shell.
+	 */
+	protected void createContents() {
+		setText("SWT Application");
+		setSize(450, 300);
+
+	}
+
+	@Override
+	protected void checkSubclass() {
+		// Disable the check that prevents subclassing of SWT components
+	}
+}

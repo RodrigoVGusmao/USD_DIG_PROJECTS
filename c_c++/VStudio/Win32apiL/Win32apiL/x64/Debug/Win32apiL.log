@@ -1,0 +1,77 @@
+﻿  Win32apiL.cpp
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\DrawArea.h(117,77): warning C4554: '>>': check operator precedence for possible error; use parentheses to clarify precedence
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\DrawArea.h(118,48): warning C4267: 'argument': conversion from 'size_t' to 'LONG', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\DrawArea.h(126,25): warning C4018: '<': signed/unsigned mismatch
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\DrawArea.h(129,75): warning C4554: '>>': check operator precedence for possible error; use parentheses to clarify precedence
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\DrawArea.h(129,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\DrawArea.h(131,68): warning C4554: '>>': check operator precedence for possible error; use parentheses to clarify precedence
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\DrawArea.h(161,72): warning C4554: '>>': check operator precedence for possible error; use parentheses to clarify precedence
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\DrawArea.h(173,42): warning C4267: '=': conversion from 'size_t' to 'DWORD', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\DrawArea.h(174,59): warning C4267: '=': conversion from 'size_t' to 'DWORD', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\DrawArea.h(190,99): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\DrawArea.h(258,28): warning C4244: '=': conversion from 'LONG' to 'uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\DrawArea.h(259,30): warning C4244: '=': conversion from 'LONG' to 'uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\DrawArea.h(328,176): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\DrawArea.h(592,56): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\DrawArea.h(779,55): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\DrawArea.h(780,66): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\dialog.h(43,108): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\dialog.h(70,107): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\dialog.h(78,109): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(28,41): warning C4244: 'initializing': conversion from 'LONG' to 'uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(28,26): warning C4244: 'initializing': conversion from 'LONG' to 'const uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(29,43): warning C4244: 'initializing': conversion from 'LONG' to 'uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(29,27): warning C4244: 'initializing': conversion from 'LONG' to 'const uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(52,44): warning C4312: 'reinterpret_cast': conversion from 'int' to 'HMENU' of greater size
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(97,36): warning C4305: '=': truncation from 'int' to 'uint8_t'
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(97,28): warning C4309: '=': truncation of constant value
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(104,55): warning C4305: '=': truncation from 'unsigned int' to 'uint8_t'
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(104,38): warning C4309: '=': truncation of constant value
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(110,23): warning C4244: 'initializing': conversion from 'LRESULT' to 'uint8_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(138,43): warning C4244: 'initializing': conversion from 'LONG' to 'uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(138,28): warning C4244: 'initializing': conversion from 'LONG' to 'const uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(139,45): warning C4244: 'initializing': conversion from 'LONG' to 'uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(139,29): warning C4244: 'initializing': conversion from 'LONG' to 'const uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(174,15): warning C4244: 'initializing': conversion from 'LONG_PTR' to 'uint8_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(179,22): warning C4244: '=': conversion from 'WORD' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=uint8_t
+          ]
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(208,15): warning C4244: 'initializing': conversion from 'LONG_PTR' to 'uint8_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(215,29): warning C4244: '=': conversion from 'LPARAM' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=uint8_t
+          ]
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(216,29): warning C4244: '=': conversion from 'LPARAM' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=uint8_t
+          ]
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(242,110): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(291,28): warning C4244: '=': conversion from 'LONG' to 'uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(292,30): warning C4244: '=': conversion from 'LONG' to 'uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(345,16): warning C4244: '=': conversion from 'LPARAM' to 'uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(448,127): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(453,126): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(457,126): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(461,128): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(473,127): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(478,119): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(482,121): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(500,12): warning C4244: '=': conversion from 'WPARAM' to 'uint8_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(513,110): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\ToolArea.h(636,168): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\file.h(69,15): warning C4244: 'initializing': conversion from 'WORD' to 'uint8_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\file.h(73,108): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\MainWindow.h(25,43): warning C4244: 'initializing': conversion from 'LONG' to 'uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\MainWindow.h(25,28): warning C4244: 'initializing': conversion from 'LONG' to 'const uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\MainWindow.h(26,45): warning C4244: 'initializing': conversion from 'LONG' to 'uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\MainWindow.h(26,29): warning C4244: 'initializing': conversion from 'LONG' to 'const uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\MainWindow.h(90,26): warning C4244: '=': conversion from 'LPARAM' to 'uint32_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\MainWindow.h(93,26): warning C4244: '=': conversion from 'LONG' to 'uint16_t', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\MainWindow.h(96,38): warning C4244: '=': conversion from 'LPARAM' to 'UINT', possible loss of data
+C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\Win32apiL\MainWindow.h(99,38): warning C4244: '=': conversion from 'LPARAM' to 'COLORREF', possible loss of data
+  LINK : C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\x64\Debug\Win32apiL.exe not found or not built by the last incremental link; performing full link
+  Win32apiL.vcxproj -> C:\Users\digao\OneDrive\Documentos\programming\c_c++\VStudio\Win32apiL\x64\Debug\Win32apiL.exe

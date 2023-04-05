@@ -1,0 +1,109 @@
+package projetoJava;
+
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Label;
+import org.eclipse.wb.swt.SWTResourceManager;
+import swing2swt.layout.FlowLayout;
+import org.eclipse.swt.widgets.CoolBar;
+import org.eclipse.swt.widgets.Table;
+import org.eclipse.swt.widgets.TableColumn;
+import org.eclipse.swt.widgets.TableItem;
+import org.eclipse.swt.custom.ViewForm;
+import org.eclipse.swt.layout.RowLayout;
+import org.eclipse.swt.layout.RowData;
+import org.eclipse.swt.layout.FormLayout;
+import org.eclipse.swt.layout.FormData;
+import org.eclipse.swt.layout.FormAttachment;
+
+public class MainWindow extends Shell {
+	private Table table;
+
+	/**
+	 * Launch the application.
+	 * @param args
+	 */
+	public static void main(String args[]) {
+		try {
+			Display display = Display.getDefault();
+			MainWindow shell = new MainWindow(display);
+			
+			Login login = new Login(shell, 0);
+			login.open();
+			
+
+			
+			shell.open();
+			shell.layout();
+			while (!shell.isDisposed()) {
+				if (!display.readAndDispatch()) {
+					display.sleep();
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * Create the shell.
+	 * @param display
+	 */
+	public MainWindow(Display display) {
+		super(display, SWT.SHELL_TRIM);
+		setLayout(new FormLayout());
+		
+		Label lblUsurio = new Label(this, SWT.NONE);
+		FormData fd_lblUsurio = new FormData();
+		fd_lblUsurio.top = new FormAttachment(0, 3);
+		fd_lblUsurio.left = new FormAttachment(0, 3);
+		lblUsurio.setLayoutData(fd_lblUsurio);
+		lblUsurio.setText("Usu\u00E1rio:");
+		
+		Label lblNotLoggedIn = new Label(this, SWT.NONE);
+		FormData fd_lblNotLoggedIn = new FormData();
+		fd_lblNotLoggedIn.right = new FormAttachment(0, 231);
+		fd_lblNotLoggedIn.top = new FormAttachment(0, 3);
+		fd_lblNotLoggedIn.left = new FormAttachment(0, 52);
+		lblNotLoggedIn.setLayoutData(fd_lblNotLoggedIn);
+		lblNotLoggedIn.setForeground(SWTResourceManager.getColor(SWT.COLOR_RED));
+		lblNotLoggedIn.setText("not logged in");
+		
+		table = new Table(this, SWT.BORDER | SWT.FULL_SELECTION);
+		FormData fd_table = new FormData();
+		fd_table.bottom = new FormAttachment(100, -3);
+		fd_table.right = new FormAttachment(100, -10);
+		fd_table.top = new FormAttachment(0, 10);
+		fd_table.left = new FormAttachment(0, 298);
+		table.setLayoutData(fd_table);
+		table.setHeaderVisible(true);
+		table.setLinesVisible(true);
+		
+		TableColumn tblclmnLabel = new TableColumn(table, SWT.NONE);
+		tblclmnLabel.setWidth(77);
+		tblclmnLabel.setText("label");
+		
+		TableColumn tblclmnItem = new TableColumn(table, SWT.NONE);
+		tblclmnItem.setWidth(45);
+		tblclmnItem.setText("item");
+		
+		TableItem tableItem = new TableItem(table, SWT.NONE);
+		tableItem.setText("teste 25");
+		createContents();
+	}
+
+	/**
+	 * Create contents of the shell.
+	 */
+	protected void createContents() {
+		setText("SWT Application");
+		setSize(450, 300);
+
+	}
+
+	@Override
+	protected void checkSubclass() {
+		// Disable the check that prevents subclassing of SWT components
+	}
+}

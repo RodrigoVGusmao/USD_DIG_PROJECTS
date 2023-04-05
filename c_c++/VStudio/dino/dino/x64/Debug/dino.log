@@ -1,0 +1,8 @@
+﻿  2DSide.cpp
+C:\Users\digao\OneDrive\Documentos\c_c++\VStudio\dino\dino\2DSide.cpp(56,22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\digao\OneDrive\Documentos\c_c++\VStudio\dino\dino\2DSide.cpp(57,22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\digao\OneDrive\Documentos\c_c++\VStudio\dino\dino\2DSide.cpp(59,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  main.cpp
+C:\Users\digao\OneDrive\Documentos\c_c++\VStudio\dino\dino\main.cpp(81,123): warning C4244: 'argument': conversion from '__int64' to 'uint8_t', possible loss of data
+  Generating Code...
+C:\Users\digao\OneDrive\Documentos\c_c++\VStudio\dino\dino\2DSide.cpp(86): error C4716: 'side::staticObject::detectPerPixelCollision': must return a value

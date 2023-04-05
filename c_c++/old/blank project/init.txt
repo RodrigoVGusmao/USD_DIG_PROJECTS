@@ -1,0 +1,7 @@
+verbos.txt
+substantivos.txt
+adjetivos.txt
+pronomes.txt
+nomes.txt
+sintaxe.txt
+variaveis.txt

@@ -1,0 +1,12 @@
+package janelas;
+
+public class EstadoJogo {
+	public String jogo;
+	public boolean vitoria;
+	
+	public EstadoJogo(String jogo, boolean vitoria)
+	{
+		this.jogo = jogo;
+		this.vitoria = vitoria;
+	}
+}

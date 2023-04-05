@@ -1,0 +1,112 @@
+# depslib dependency file v1.0
+1667692270 source:c:\users\digao\onedrive\documentos\programming\c_c++\openglo\highrestimer.cpp
+	"highResTimer.h"
+
+1667690896 c:\users\digao\onedrive\documentos\programming\c_c++\openglo\highrestimer.h
+	<Windows.h>
+
+1668529330 source:c:\users\digao\onedrive\documentos\programming\c_c++\openglo\main.cpp
+	<glut.h>
+	<math.h>
+	"highResTimer.h"
+	<stdio.h>
+
+1426360528 c:\users\digao\onedrive\documentos\programming\c_c++\libs\freeglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1426360528 c:\users\digao\onedrive\documentos\programming\c_c++\libs\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1669402272 source:c:\users\digao\onedrive\documentos\programming\c_c++\opengl2\highrestimer.cpp
+	"highResTimer.h"
+
+1669402272 c:\users\digao\onedrive\documentos\programming\c_c++\opengl2\highrestimer.h
+	<Windows.h>
+
+1670357645 source:c:\users\digao\onedrive\documentos\programming\c_c++\opengl2\main.cpp
+	<glut.h>
+	<math.h>
+	<stdio.h>
+	"highResTimer.h"
+	"texture.h"
+	"animationLoader.h"
+	"scene.h"
+
+1670346469 c:\users\digao\onedrive\documentos\programming\c_c++\opengl2\include\scene.h
+	<glut.h>
+	"animationLoader.h"
+
+1670357621 source:c:\users\digao\onedrive\documentos\programming\c_c++\opengl2\src\scene.cpp
+	"scene.h"
+	<glut.h>
+	<math.h>
+	<stdio.h>
+
+1670326246 source:c:\users\digao\onedrive\documentos\programming\c_c++\opengl2\src\texture.cpp
+	"texture.h"
+	<stdio.h>
+
+1670320073 c:\users\digao\onedrive\documentos\programming\c_c++\opengl2\include\texture.h
+	<glut.h>
+	<stdint.h>
+	<windows.h>
+
+1668540116 source:c:\users\rodrigo.gusmao\downloads\opengl2\highrestimer.cpp
+	"highResTimer.h"
+
+1668540116 c:\users\rodrigo.gusmao\downloads\opengl2\highrestimer.h
+	<Windows.h>
+
+1669162520 source:c:\users\rodrigo.gusmao\downloads\opengl2\main.cpp
+	<glut.h>
+	<math.h>
+	"highResTimer.h"
+	"scene.h"
+	"texture.h"
+
+1668538162 c:\users\rodrigo.gusmao\downloads\freeglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1668538166 c:\users\rodrigo.gusmao\downloads\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1669162520 c:\users\rodrigo.gusmao\downloads\opengl2\include\scene.h
+	<glut.h>
+
+1668985694 c:\users\rodrigo.gusmao\downloads\opengl2\include\texture.h
+	<glut.h>
+
+1669165303 source:c:\users\rodrigo.gusmao\downloads\opengl2\src\scene.cpp
+	"scene.h"
+	<glut.h>
+	<math.h>
+	<stdio.h>
+
+1668986614 source:c:\users\rodrigo.gusmao\downloads\opengl2\src\texture.cpp
+	"texture.h"
+	<stdio.h>
+
+1670354449 source:c:\users\digao\onedrive\documentos\programming\c_c++\opengl2\src\animationloader.cpp
+	"animationLoader.h"
+	<stdio.h>
+	<stdlib.h>
+
+1670345902 c:\users\digao\onedrive\documentos\programming\c_c++\opengl2\include\animationloader.h
+	<stdint.h>
+
