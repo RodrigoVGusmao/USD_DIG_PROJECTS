@@ -1,0 +1,1 @@
+nasm -f win64 %asmFile% %*
